@@ -1,0 +1,140 @@
+/* ==========================================================
+   darasa — design tokens
+   Fuente: DESIGN.md (dirección "Señales")
+   ========================================================== */
+
+:root {
+  color-scheme: light dark;
+
+  /* -------------------- Typography -------------------- */
+  --font-body:    "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-mono:    "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-2xs:   10px;   /* micro labels, timeline axis, credits */
+  --fs-xs:    12px;
+  --fs-sm:    14px;
+  --fs-base:  16px;
+  --fs-md:    17px;
+  --fs-lg:    20px;
+  --fs-xl:    24px;
+  --fs-2xl:   32px;
+  --fs-3xl:   44px;
+  --fs-4xl:   60px;
+
+  --lh-tight: 1.05;
+  --lh-snug:  1.3;
+  --lh-body:  1.6;
+
+  /* -------------------- Spacing (base 4px) -------------------- */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  24px;
+  --sp-6:  32px;
+  --sp-7:  48px;
+  --sp-8:  64px;
+  --sp-9:  96px;
+
+  /* -------------------- Radius -------------------- */
+  --r-sm:   8px;
+  --r-md:   12px;
+  --r-lg:   14px;
+  --r-xl:   18px;
+  --r-2xl:  24px;
+  --r-full: 999px;
+
+  /* -------------------- Motion -------------------- */
+  --ease:      cubic-bezier(0.32, 0.72, 0, 1);
+  --dur:       200ms;
+  --dur-snap:  120ms;
+
+  /* -------------------- Base palette (Light) -------------------- */
+  --bg:           #FFFFFF;
+  --bg-soft:      #F3F5F9;
+  --bg-sunken:    #E9EDF3;
+  --ink:          #0F1116;
+  --ink-2:        #4C5360;
+  --ink-3:        #8A91A0;
+  --rule:         rgba(15, 17, 22, 0.12);
+  --rule-strong:  rgba(15, 17, 22, 0.24);
+  --accent:       #F04436;
+  --accent-bg:    #FFE3E0;
+  --accent-ink:   #8A1A12;
+
+  /* -------------------- Dynasty palette (Light) --------------------
+     Two tokens per dynasty:
+       --c-<slug>-ink   → text, borders, emblems on neutral bg (AA on #FFF)
+       --c-<slug>-solid → background with #fff text (AA/AAA, L~0.40-0.48)
+     Legacy alias --c-<slug> points to -ink for back-compat with data.js colorVar.
+     Values calibrated in OKLCH, exported to hex for deterministic rendering.
+  -------------------------------------------------------------------- */
+
+  /* Ink (text) — AA on #FFFFFF guaranteed */
+  --c-visigodos-ink:  #4458D4;   /* oklch 0.48/0.21/267 · 6.03:1 */
+  --c-andalus-ink:    #00754E;   /* oklch 0.45/0.12/170 · 5.98:1 */
+  --c-norte-ink:      #C3367B;   /* oklch 0.53/0.18/355 · 4.72:1 */
+  --c-catolicos-ink:  #B4261B;   /* oklch 0.48/0.22/25  · 6.18:1 */
+  --c-habsburgo-ink:  #353A45;   /* oklch 0.31/0.02/260 · 11.25:1 */
+  --c-borbon-ink:     #1159BB;   /* oklch 0.48/0.19/256 · 7.12:1 */
+  --c-republica-ink:  #555C69;   /* oklch 0.42/0.02/260 · 6.55:1 */
+
+  /* Solid (bg with #FFFFFF text) — AA guaranteed, most AAA */
+  --c-visigodos-solid:  #2E3DA6;   /* oklch 0.40/0.22/267 · 8.96:1 */
+  --c-andalus-solid:    #006B4A;   /* oklch 0.42/0.13/170 · 6.97:1 */
+  --c-norte-solid:      #9B1E56;   /* oklch 0.45/0.18/355 · 7.88:1 */
+  --c-catolicos-solid:  #A91C0F;   /* oklch 0.45/0.22/25  · 7.44:1 */
+  --c-habsburgo-solid:  #353A45;   /* oklch 0.31/0.02/260 · 11.25:1 (same) */
+  --c-borbon-solid:     #0A4BA8;   /* oklch 0.44/0.20/256 · 8.21:1 */
+  --c-republica-solid:  #4D5361;   /* oklch 0.40/0.02/260 · 7.33:1 */
+
+  /* Legacy aliases (data.js colorVar strings) → resolve to ink by default */
+  --c-visigodos:  var(--c-visigodos-ink);
+  --c-andalus:    var(--c-andalus-ink);
+  --c-norte:      var(--c-norte-ink);
+  --c-catolicos:  var(--c-catolicos-ink);
+  --c-habsburgo:  var(--c-habsburgo-ink);
+  --c-borbon:     var(--c-borbon-ink);
+  --c-republica:  var(--c-republica-ink);
+}
+
+[data-theme="dark"] {
+  --bg:           #0E1014;
+  --bg-soft:      #16181E;
+  --bg-sunken:    #0A0B0E;
+  --ink:          #F4F5F8;
+  --ink-2:        #B3BAC6;
+  --ink-3:        #7D8595;
+  --rule:         rgba(244, 245, 248, 0.10);
+  --rule-strong:  rgba(244, 245, 248, 0.22);
+  --accent:       #FF6B5E;
+  --accent-bg:    #2E1512;
+  --accent-ink:   #FFB0A8;
+
+  /* Ink (text) — AA on --bg-soft #16181E guaranteed */
+  --c-visigodos-ink:  #8598FA;   /* 6.96:1 */
+  --c-andalus-ink:    #53E1BA;   /* 12.3:1 */
+  --c-norte-ink:      #F077B3;   /* 6.3:1 */
+  --c-catolicos-ink:  #FF7065;   /* 6.2:1 */
+  --c-habsburgo-ink:  #C8CCD6;   /* 11.5:1 */
+  --c-borbon-ink:     #6FA5FF;   /* 8.2:1 */
+  --c-republica-ink:  #B3BAC6;   /* 9.0:1 */
+
+  /* Solid (bg with #FFFFFF text) — medium intensity so panel separates from dark page bg */
+  --c-visigodos-solid:  #4657D0;   /* oklch 0.55/0.19/267 · 7.00:1 vs #fff */
+  --c-andalus-solid:    #1A8566;   /* oklch 0.52/0.13/170 · 5.05:1 */
+  --c-norte-solid:      #B53977;   /* oklch 0.52/0.18/355 · 5.68:1 */
+  --c-catolicos-solid:  #C0301F;   /* oklch 0.52/0.22/25  · 5.38:1 */
+  --c-habsburgo-solid:  #4D5361;   /* oklch 0.42/0.02/260 · 8.08:1 */
+  --c-borbon-solid:     #3267BF;   /* oklch 0.52/0.17/256 · 5.53:1 */
+  --c-republica-solid:  #676E7D;   /* oklch 0.50/0.02/260 · 5.25:1 */
+
+  --c-visigodos:  var(--c-visigodos-ink);
+  --c-andalus:    var(--c-andalus-ink);
+  --c-norte:      var(--c-norte-ink);
+  --c-catolicos:  var(--c-catolicos-ink);
+  --c-habsburgo:  var(--c-habsburgo-ink);
+  --c-borbon:     var(--c-borbon-ink);
+  --c-republica:  var(--c-republica-ink);
+}

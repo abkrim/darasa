@@ -1,0 +1,50 @@
+slug: al-andalus
+nombre: "Al-Ándalus"
+tipo: epoca
+inicio: 711
+fin: 1492
+colorVar: "--c-andalus"
+sub_entidades:
+  - slug: emirato-dependiente
+    nombre: "Emirato dependiente"
+    inicio: 711
+    fin: 756
+  - slug: emirato-independiente
+    nombre: "Emirato independiente"
+    inicio: 756
+    fin: 929
+  - slug: califato
+    nombre: "Califato de Córdoba"
+    inicio: 929
+    fin: 1031
+  - slug: taifas
+    nombre: "Primeras Taifas"
+    inicio: 1031
+    fin: 1086
+  - slug: almoravides
+    nombre: "Almorávides"
+    inicio: 1086
+    fin: 1147
+  - slug: almohades
+    nombre: "Almohades"
+    inicio: 1147
+    fin: 1232
+  - slug: nazaries
+    nombre: "Reino Nazarí de Granada"
+    inicio: 1232
+    fin: 1492
+desc: >
+  Al-Ándalus designa los territorios de la Península Ibérica bajo gobierno
+  musulmán entre 711 y 1492. Tras la conquista árabe-bereber y el período
+  dependiente de Damasco, Abd al-Rahman I funda el emirato omeya independiente
+  de Córdoba en 756. Abd al-Rahman III lo eleva a califato en 929, fragmentado
+  en taifas tras la fitna de 1031. Las dinastías norteafricanas almorávide y
+  almohade reunifican el territorio entre 1086 y 1232; el reino nazarí de
+  Granada — último reducto andalusí desde 1232 — capitula ante los Reyes
+  Católicos el 2 de enero de 1492.
+fuentes:
+  - "Kennedy, H. (1996, reimpr. Routledge 2014). Muslim Spain and Portugal: A Political History of al-Andalus. Longman."
+  - "Manzano Moreno, E. (2006). Conquistadores, emires y califas: los omeyas y la formación de al-Ándalus. Crítica."
+  - "Lévi-Provençal, E. (1944-1953). Histoire de l'Espagne musulmane. Maisonneuve / Brill, 3 vols."
+  - "Chalmeta, P. (1994). Invasión e islamización: la sumisión de Hispania y la formación de al-Andalus. Mapfre."
+  - "Arié, R. (1982). España musulmana (siglos VIII-XV). Vol. III de Historia de España, dir. Tuñón de Lara. Labor."

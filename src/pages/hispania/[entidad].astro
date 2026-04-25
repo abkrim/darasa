@@ -1,0 +1,142 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const entidades = await getCollection('entidades');
+  return entidades.map((ent) => ({
+    params: { entidad: ent.data.slug },
+    props: { ent },
+  }));
+}
+
+const { ent } = Astro.props;
+const entidad = ent.data;
+
+const soberanos = await getCollection(
+  'soberanos',
+  (s) => s.data.entidad === entidad.slug,
+);
+const sorted = soberanos.sort((a, b) => a.data.id - b.data.id);
+
+const colorVar = entidad.colorVar;
+const dynColor = `var(${colorVar}-ink)`;
+const dynColorSolid = `var(${colorVar}-solid)`;
+
+const finLabel = entidad.fin == null ? 'hoy' : entidad.fin;
+
+const pageTitle = `${entidad.nombre} · darasa`;
+const metaDesc = `${soberanos.length} soberanos de ${entidad.nombre} (${entidad.inicio}-${finLabel}). ${entidad.desc.replace(/\s+/g, ' ').slice(0, 140).trim()}...`;
+
+function toRoman(n) {
+  const map = [
+    [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+    [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+    [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I'],
+  ];
+  let out = '';
+  let value = n;
+  for (const [v, sym] of map) {
+    while (value >= v) {
+      out += sym;
+      value -= v;
+    }
+  }
+  return out;
+}
+
+function firstLetter(name) {
+  return name.charAt(0).toUpperCase();
+}
+
+const totalLabel = `${sorted.length} ${sorted.length === 1 ? 'monarca' : 'monarcas'}`;
+const rangoLabel = sorted.length > 0
+  ? `de ${sorted[0].data.nombre} a ${sorted[sorted.length - 1].data.nombre}`
+  : '';
+---
+
+<Layout title={pageTitle} description={metaDesc}>
+  <main
+    id="main"
+    class="wrap"
+    style={`--dyn-color: ${dynColor}; --dyn-color-solid: ${dynColorSolid};`}
+  >
+    <nav class="breadcrumbs" aria-label="Navegación de ruta">
+      <ol>
+        <li><a href="/">darasa</a></li>
+        <li><span aria-current="page">{entidad.nombre}</span></li>
+      </ol>
+    </nav>
+
+    <header class="dynasty-header" aria-labelledby="dyn-title">
+      <div class="dynasty-row">
+        <span class="dynasty-emblem-lg" id="dyn-emblem" data-entidad={entidad.slug}></span>
+        <div>
+          <div class="dynasty-label">{entidad.nombre}</div>
+          <h1 class="dynasty-title" id="dyn-title">Soberanos de {entidad.nombre}</h1>
+          <div class="dynasty-years numeric">{entidad.inicio} – {finLabel}</div>
+        </div>
+      </div>
+      <p class="dynasty-intro">{entidad.desc}</p>
+    </header>
+
+    <section class="section" aria-labelledby="reyes-title">
+      <header class="section-head">
+        <span class="label">{totalLabel} {rangoLabel && `· ${rangoLabel}`}</span>
+        <h2 id="reyes-title">En orden cronológico</h2>
+      </header>
+
+      {sorted.length === 0 ? (
+        <p class="empty-state">
+          Aún no hay soberanos cargados para esta entidad. Ver <code>CLAUDE.md</code> para añadir uno.
+        </p>
+      ) : (
+        <div class="grid-reyes" role="list">
+          {sorted.map((sob) => (
+            <a
+              class="card-rey"
+              href={`/hispania/soberanos/${sob.data.slug}`}
+              role="listitem"
+              aria-label={`${sob.data.nombre}${sob.data.epiteto ? `, ${sob.data.epiteto}` : ''}, reinó del ${sob.data.inicio} al ${sob.data.fin ?? 'presente'}`}
+            >
+              <div class="card-rey-thumb">
+                <span class="card-rey-num">{toRoman(sob.data.id)}</span>
+                {sob.data.img ? (
+                  <img
+                    src={sob.data.img}
+                    alt={`Retrato de ${sob.data.nombre}`}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <span class="card-rey-placeholder" aria-hidden="true">
+                    {firstLetter(sob.data.nombre)}
+                  </span>
+                )}
+              </div>
+              <div class="card-rey-body">
+                <div class="card-rey-name">{sob.data.nombre}</div>
+                <div class="card-rey-years">
+                  {sob.data.inicio}–{sob.data.fin ?? 'hoy'}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      )}
+    </section>
+  </main>
+
+  <script src="/scripts/emblemas.js" is:inline></script>
+  <script is:inline>
+    (function () {
+      'use strict';
+      var slot = document.getElementById('dyn-emblem');
+      if (slot && window.getEmblemElement) {
+        var entidad = slot.dataset.entidad;
+        var emblem = window.getEmblemElement(entidad, 56);
+        if (emblem) slot.appendChild(emblem);
+      }
+    })();
+  </script>
+</Layout>

@@ -1,0 +1,17 @@
+slug: visigodos
+nombre: "Reino visigodo"
+tipo: reino
+inicio: 418
+fin: 711
+colorVar: "--c-visigodos"
+desc: >
+  Los visigodos establecieron su reino en Hispania tras el colapso del Imperio
+  Romano de Occidente. Con capital en Toledo desde el siglo VI, llegaron a
+  controlar toda la península y el sur de la Galia. Recaredo I se convirtió al
+  catolicismo en el III Concilio de Toledo (589), unificando religiosamente a
+  godos e hispanorromanos. El reino terminó en 711 con la derrota de Rodrigo
+  frente a las tropas árabe-bereberes de Tariq ibn Ziyad en la batalla de
+  Guadalete.
+fuentes:
+  - "Orlandis, J. (2003). Historia del reino visigodo español. Rialp."
+  - "Collins, R. (2004). Visigothic Spain 409-711. Blackwell."

@@ -1,0 +1,179 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const soberanos = await getCollection('soberanos');
+  return soberanos.map((sob) => ({
+    params: { slug: sob.data.slug },
+    props: { sob },
+  }));
+}
+
+const { sob } = Astro.props;
+const { Content } = await render(sob);
+
+const entidadEntry = await getEntry('entidades', sob.data.entidad);
+if (!entidadEntry) {
+  throw new Error(`Entidad "${sob.data.entidad}" no encontrada para el soberano "${sob.data.slug}".`);
+}
+const entidad = entidadEntry.data;
+
+const hermanos = await getCollection('soberanos', (s) => s.data.entidad === sob.data.entidad);
+const sorted = hermanos.sort((a, b) => a.data.id - b.data.id);
+const currentIdx = sorted.findIndex((s) => s.data.slug === sob.data.slug);
+const prev = currentIdx > 0 ? sorted[currentIdx - 1] : null;
+const next = currentIdx >= 0 && currentIdx < sorted.length - 1 ? sorted[currentIdx + 1] : null;
+
+const colorVar = entidad.colorVar;
+const dynColor = `var(${colorVar}-ink)`;
+const dynColorSolid = `var(${colorVar}-solid)`;
+
+const duracion = sob.data.fin != null ? sob.data.fin - sob.data.inicio : null;
+
+const pageTitle = `${sob.data.nombre}${sob.data.epiteto ? `, ${sob.data.epiteto}` : ''} · ${entidad.nombre} · darasa`;
+const metaDesc = `${sob.data.nombre}${sob.data.epiteto ? ` (${sob.data.epiteto})` : ''}, soberano de ${entidad.nombre} (${sob.data.inicio}-${sob.data.fin ?? 'presente'}). Capital: ${sob.data.capital ?? '—'}.`;
+
+const inicioISO = String(sob.data.inicio).padStart(4, '0');
+const finISO = sob.data.fin != null ? String(sob.data.fin).padStart(4, '0') : null;
+
+const inicial = sob.data.nombre.charAt(0).toUpperCase();
+---
+
+<Layout title={pageTitle} description={metaDesc}>
+  <main
+    id="main"
+    class="wrap"
+    style={`--dyn-color: ${dynColor}; --dyn-color-solid: ${dynColorSolid};`}
+  >
+    <nav class="breadcrumbs" aria-label="Navegación de ruta">
+      <ol>
+        <li><a href="/">darasa</a></li>
+        <li><a href={`/hispania/${entidad.slug}`}>{entidad.nombre}</a></li>
+        <li><span aria-current="page">{sob.data.nombre}</span></li>
+      </ol>
+    </nav>
+
+    <article class="ficha" aria-labelledby="rey-name">
+      <aside class="ficha-left">
+        {
+          sob.data.img ? (
+            <img
+              id="rey-portrait"
+              src={sob.data.img}
+              width="240"
+              height="240"
+              alt={`Retrato de ${sob.data.nombre}${sob.data.imgCredit ? ` — ${sob.data.imgCredit}` : ''}`}
+              loading="eager"
+            />
+          ) : (
+            <div class="ficha-placeholder-portrait" aria-hidden="true">{inicial}</div>
+          )
+        }
+
+        <div class="ficha-badge">
+          <span id="ficha-emblem" data-entidad={entidad.slug}></span>
+          <span class="ficha-badge-label">{entidad.nombre}</span>
+          <span class="ficha-badge-years numeric">
+            nº {sob.data.id} · {sob.data.inicio}–{sob.data.fin ?? 'hoy'}
+          </span>
+        </div>
+
+        {sob.data.imgCredit && (
+          <p class="ficha-credit">{sob.data.imgCredit}</p>
+        )}
+      </aside>
+
+      <div class="ficha-body">
+        <span class="ficha-dyn">
+          {entidad.nombre}{sob.data.capital ? ` · ${sob.data.capital}` : ''}
+        </span>
+
+        <h1 id="rey-name" class="ficha-name">{sob.data.nombre}</h1>
+        {sob.data.epiteto && <p class="ficha-epithet">{sob.data.epiteto}</p>}
+
+        <div class="ficha-reign">
+          <span>Reinó</span>
+          <strong>
+            <time datetime={`${inicioISO}-01-01`}>{sob.data.inicio}</time>
+            {finISO ? (
+              <>
+                {' '}–{' '}
+                <time datetime={`${finISO}-12-31`}>{sob.data.fin}</time>
+              </>
+            ) : (
+              <> – presente</>
+            )}
+          </strong>
+          {duracion != null && <span class="dur">· {duracion} años</span>}
+        </div>
+
+        <div class="ficha-desc">
+          <Content />
+        </div>
+
+        {sob.data.hechos && sob.data.hechos.length > 0 && (
+          <div class="ficha-facts" aria-label="Datos clave">
+            {sob.data.hechos.map((h) => (
+              <div class="fact">
+                <span class="fact-key">{h.k}</span>
+                <span class="fact-value">{h.v}</span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <nav class="ficha-nav" aria-label={`Navegación entre soberanos de ${entidad.nombre}`}>
+          {prev ? (
+            <a
+              class="nav-btn prev"
+              href={`/hispania/soberanos/${prev.data.slug}`}
+              aria-label={`Soberano anterior: ${prev.data.nombre}, ${prev.data.inicio} a ${prev.data.fin ?? 'presente'}`}
+            >
+              <span class="nav-btn-dir">← Anterior</span>
+              <span class="nav-btn-name">{prev.data.nombre}</span>
+              <span class="nav-btn-years">{prev.data.inicio}–{prev.data.fin ?? 'hoy'}</span>
+            </a>
+          ) : (
+            <span class="nav-btn is-disabled" aria-disabled="true">
+              <span class="nav-btn-dir">← Anterior</span>
+              <span class="nav-btn-name">—</span>
+              <span class="nav-btn-years">Primer soberano</span>
+            </span>
+          )}
+
+          {next ? (
+            <a
+              class="nav-btn next"
+              href={`/hispania/soberanos/${next.data.slug}`}
+              aria-label={`Soberano siguiente: ${next.data.nombre}, ${next.data.inicio} a ${next.data.fin ?? 'presente'}`}
+            >
+              <span class="nav-btn-dir">Siguiente →</span>
+              <span class="nav-btn-name">{next.data.nombre}</span>
+              <span class="nav-btn-years">{next.data.inicio}–{next.data.fin ?? 'hoy'}</span>
+            </a>
+          ) : (
+            <span class="nav-btn is-disabled" aria-disabled="true">
+              <span class="nav-btn-dir">Siguiente →</span>
+              <span class="nav-btn-name">—</span>
+              <span class="nav-btn-years">Último soberano</span>
+            </span>
+          )}
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <script src="/scripts/emblemas.js" is:inline></script>
+  <script is:inline>
+    (function () {
+      'use strict';
+      var slot = document.getElementById('ficha-emblem');
+      if (slot && window.getEmblemElement) {
+        var entidad = slot.dataset.entidad;
+        var emblem = window.getEmblemElement(entidad, 28);
+        if (emblem) slot.appendChild(emblem);
+      }
+    })();
+  </script>
+</Layout>
