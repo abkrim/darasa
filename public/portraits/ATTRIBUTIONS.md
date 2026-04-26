@@ -146,6 +146,10 @@ Salvo excepciones indicadas, los retratos proceden de la serie cronológica del 
 | `muhammad-i.webp` | [Dirham muhammad i 20068.jpg](https://commons.wikimedia.org/wiki/File:Dirham_muhammad_i_20068.jpg) | Dírham emiral | 852-886 |
 | `abd-allah-ibn-muhammad.webp` | [Abdalah felús 20286.jpg](https://commons.wikimedia.org/wiki/File:Abdalah_fel%C3%BAs_20286.jpg) | Felús emiral del último emir omeya | 888-912 |
 
+## Retratos de Pamplona-Navarra
+
+Los trece soberanos del bloque 824-1234 tienen `img: null` — la serie del Museo del Prado no incluye reyes de Navarra, y los retratos medievales auténticos son escasos o de difícil atribución. Pendiente localizar en Commons retratos medievales o de época para Sancho III el Mayor, García Sánchez III de Nájera, García Ramírez el Restaurador, Sancho VI el Sabio y Sancho VII el Fuerte. Las imágenes se añadirán en una sesión posterior junto a sus atribuciones.
+
 ## Procedencia
 
 Los originales de alta resolución están disponibles en Wikimedia Commons mediante los enlaces de la tabla. Las reducciones locales se generaron con `sips --resampleWidth 240` seguido de `cwebp -q 85 -mt`.
