@@ -43,6 +43,8 @@ const soberanos = defineCollection({
     slug: z.string(),
     entidad: z.string(),
     sub_entidad: z.string().optional(),
+    tambien_reino_en: z.array(z.string()).optional(),
+    linaje: z.string().optional(),
     id: z.number().int().positive(),
     nombre: z.string(),
     epiteto: z.string().optional(),

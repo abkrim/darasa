@@ -1,0 +1,22 @@
+slug: asturias
+nombre: "Reino de Asturias"
+tipo: reino
+inicio: 718
+fin: 910
+colorVar: "--c-norte"
+desc: >
+  Primer reino cristiano peninsular tras la conquista árabe-bereber de 711.
+  Surge en la cordillera Cantábrica con Pelayo, aclamado rey hacia 718, y la
+  victoria simbólica de Covadonga (c. 722) ante un destacamento omeya. Con
+  capital sucesivamente en Cangas de Onís, Pravia y Oviedo (desde Alfonso II
+  el Casto, 791), el reino expande sus fronteras hacia el sur a lo largo del
+  siglo IX, repobla la cuenca del Duero y articula el descubrimiento de la
+  tumba de Santiago en Compostela como eje ideológico. Alfonso III el Magno
+  (866-910) lleva el reino a su máxima extensión; tras su muerte, sus hijos
+  reparten el territorio y la corte se traslada a León, dando paso al reino
+  leonés.
+fuentes:
+  - "Isla Frez, A. (2002). La Alta Edad Media: siglos VIII-XI. Síntesis."
+  - "Sánchez-Albornoz, C. (1972-1975). Orígenes de la nación española: el reino de Asturias. Instituto de Estudios Asturianos, 3 vols."
+  - "Collins, R. (1989). The Arab Conquest of Spain, 710-797. Blackwell."
+  - "Besga Marroquín, A. (2000). Orígenes hispano-godos del reino de Asturias. Universidad de Deusto."
