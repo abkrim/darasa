@@ -1,0 +1,43 @@
+slug: reino-portugal
+nombre: "Reino de Portugal"
+tipo: reino
+inicio: 1139
+fin: 1910
+colorVar: "--c-norte"
+sub_entidades:
+  - slug: borgoña
+    nombre: "Casa de Borgoña"
+    inicio: 1139
+    fin: 1383
+  - slug: avis
+    nombre: "Casa de Avís"
+    inicio: 1385
+    fin: 1580
+  - slug: filipina
+    nombre: "Unión Ibérica (filipina)"
+    inicio: 1580
+    fin: 1640
+  - slug: bragança
+    nombre: "Casa de Bragança"
+    inicio: 1640
+    fin: 1910
+desc: >
+  Reino atlántico nacido en 1139 cuando Afonso Henriques se titula rey
+  tras vencer en Ourique al destacamento almorávide y separar
+  definitivamente sus dominios del reino leonés. Su independencia es
+  reconocida por León en el tratado de Zamora (1143) y por el papado en
+  1179. A lo largo de la Edad Media el reino consolida su frontera
+  meridional hasta el Algarve (1249) bajo Afonso III. La casa de Avís,
+  surgida tras la crisis sucesoria de 1383-1385, lleva al reino a la
+  expansión marítima — Madeira, Azores, Guinea, India, Brasil, Macao —
+  hasta la unión dinástica con la monarquía hispánica de Felipe II
+  (1580-1640), conocida como Unión Ibérica. La restauración brigantina
+  de 1640 abre el período moderno: Brasil como dominio principal,
+  invasiones napoleónicas con la corte transferida a Río (1808-1821),
+  monarquía constitucional y guerras liberales en el siglo XIX, hasta la
+  proclamación de la República en 1910 que pone fin al reino.
+fuentes:
+  - "Mattoso, J. (dir.) (1993). História de Portugal. Estampa, 8 vols."
+  - "Marques, A. H. de Oliveira (1972). History of Portugal. Columbia University Press, 2 vols."
+  - "Coelho, M. H. da Cruz (1988). Portugal na Primeira Metade do Século XIV. Editorial Presença."
+  - "Birmingham, D. (2003). A Concise History of Portugal. Cambridge University Press."

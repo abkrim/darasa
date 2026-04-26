@@ -1,0 +1,25 @@
+slug: cataluña
+nombre: "Condado de Barcelona"
+tipo: condado
+inicio: 878
+fin: 1162
+colorVar: "--c-norte"
+desc: >
+  Condado nacido en la Marca Hispánica del imperio carolingio, articulado
+  por Wifredo el Velloso desde 878 al unificar varios condados pirenaicos
+  bajo su linaje. A lo largo del siglo X y XI fue absorbiendo o
+  vinculándose con los demás condados catalanes (Urgell, Pallars, Cerdaña,
+  Besalú, Empúries) hasta convertirse en el poder hegemónico del nordeste
+  peninsular. Borrell II marcó la independencia de facto del Imperio
+  Carolingio en 988 al no renovar los lazos vasalláticos. La línea
+  condal terminó en 1162, cuando el último conde Ramón Berenguer IV
+  unió Aragón y Cataluña por matrimonio con Petronila, dando lugar a la
+  Corona de Aragón. Tras 1162, los soberanos del Principado de Cataluña
+  son los reyes de Aragón y aparecen en esa entidad. La entidad cubre
+  por tanto el ciclo del condado de Barcelona como poder propio,
+  desde Wifredo hasta su fusión dinástica.
+fuentes:
+  - "Sobrequés Vidal, S. (1961). Els grans comtes de Barcelona. Vicens-Vives."
+  - "Bisson, T. N. (1986). The Medieval Crown of Aragon. Clarendon Press."
+  - "Salrach, J. M. (1987). El procés de feudalització: segles III-XII. Edicions 62."
+  - "Gesta Comitum Barcinonensium (siglos XII-XIII). Edición moderna por L. Barrau-Dihigo y J. Massó Torrents, 1925."

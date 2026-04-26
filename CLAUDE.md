@@ -71,6 +71,18 @@ public/
 
 Antes de hacer "mejoras" aleatorias, consultar `BACKLOG.md`. Tiene los 14 hallazgos del audit 2026-04-24 priorizados por severidad (2 High, 6 Medium, 6 Low). El backlog fue redactado contra el prototipo legacy (HTML+JS en `reges-hispaniae/`); al resolver cada item, validar si aplica al stack Astro actual (ver nota en la cabecera de `BACKLOG.md`).
 
+## Migración de soberanos (sesiones de contenido)
+
+El trabajo de migrar reyes de las distintas coronas se hace en sesiones acotadas, normalmente con un modelo más barato (Sonnet) siguiendo procedimientos mecánicos. La infraestructura documental está en `docs/`:
+
+- **`docs/MIGRATION-GUIDE.md`** — el "cómo": flujo paso a paso (búsqueda Commons, descarga, plantilla markdown, atribución, validación, commit). Convenciones de slug, sub_entidad, linaje, `tambien_reino_en`. Casos especiales (reinas reinantes, antirreyes, regencias, reyes en múltiples coronas).
+- **`docs/MIGRATION-TODO.md`** — el "qué falta": estado por entidad, listas exhaustivas por bloque, retratos pre-descargados, atribuciones a añadir, decisiones pendientes. Se actualiza al cerrar cada bloque.
+- **`docs/SONNET-PROMPT.md`** — prompts listos para pegar al iniciar una sesión Sonnet por bloque.
+
+El **tono historiográfico obligatorio** está consolidado como memoria del proyecto en `~/.claude/projects/-Users-abkrim-SitesWeb-ibrahim-darasa/memory/feedback_historiographic_tone.md`. Resumen: factual y matizado, evitar "Reconquista", epítetos solo canónicos, sucesiones femeninas en `hechos`, sin teleología castellanista.
+
+**Estado a 2026-04-26:** completos visigodos parciales (1/31), Asturias (12/12), Al-Ándalus (parcial — verificar), entidades de León-Castilla, Pamplona-Navarra, Aragón, Cataluña y Reino de Portugal creadas como esqueletos. Bloque siguiente recomendado: León-Castilla 910-1230 (23 reyes) — instrucciones en `SONNET-PROMPT.md`.
+
 ## Content workflow
 
 Reglas para añadir o editar contenido sin romper el sistema. Si el cambio es no trivial, leer también `BACKLOG.md` por si pisa algún item pendiente.

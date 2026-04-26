@@ -1,0 +1,41 @@
+slug: aragon
+nombre: "Reino de Aragón"
+tipo: reino
+inicio: 1035
+fin: 1707
+colorVar: "--c-norte"
+sub_entidades:
+  - slug: reino-aragon
+    nombre: "Reino de Aragón"
+    inicio: 1035
+    fin: 1162
+  - slug: corona-aragon
+    nombre: "Corona de Aragón"
+    inicio: 1162
+    fin: 1410
+  - slug: trastamara
+    nombre: "Casa de Trastámara"
+    inicio: 1412
+    fin: 1516
+  - slug: austrias-borbon
+    nombre: "Habsburgo y Borbón"
+    inicio: 1516
+    fin: 1707
+desc: >
+  Reino pirenaico nacido en 1035 cuando Sancho III el Mayor de Pamplona
+  legó a su hijo Ramiro un conjunto de condados al sur del Pirineo
+  (Aragón, Sobrarbe, Ribagorza). En 1137, mediante el matrimonio dinástico
+  de Petronila con Ramón Berenguer IV de Barcelona, se constituyó la
+  Corona de Aragón, agregado político que en los siglos siguientes
+  incorporaría Valencia, Mallorca, Sicilia, Cerdeña, Nápoles y los
+  ducados griegos. La unión dinástica con Castilla por los Reyes Católicos
+  (1479) no supuso fusión institucional: Aragón conservó Cortes, fueros y
+  Generalitat propios bajo los Habsburgo. Los Decretos de Nueva Planta de
+  Felipe V (1707) abolieron las instituciones aragonesas como represalia
+  por el apoyo de la corona al archiduque Carlos durante la Guerra de
+  Sucesión española, integrándola en el modelo borbónico unificado.
+fuentes:
+  - "Zurita, J. (1562-1580). Anales de la Corona de Aragón. Edición moderna por Á. Canellas, Institución Fernando el Católico."
+  - "Ubieto Arteta, A. (1981-1989). Historia de Aragón. Anubar, 6 vols."
+  - "Sesma Muñoz, J. Á. (2000). La Corona de Aragón en la Baja Edad Media. Caja de Ahorros de la Inmaculada."
+  - "Bisson, T. N. (1986). The Medieval Crown of Aragon. Clarendon Press."

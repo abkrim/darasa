@@ -1,0 +1,54 @@
+slug: leon-castilla
+nombre: "Reino de León-Castilla"
+tipo: reino
+inicio: 910
+fin: 1715
+colorVar: "--c-norte"
+sub_entidades:
+  - slug: leon
+    nombre: "Reino de León"
+    inicio: 910
+    fin: 1037
+  - slug: castilla-independiente
+    nombre: "Reino de Castilla independiente"
+    inicio: 1065
+    fin: 1072
+  - slug: leon-castilla-unidos
+    nombre: "León y Castilla unidos"
+    inicio: 1037
+    fin: 1157
+  - slug: dos-reinos
+    nombre: "León y Castilla separados"
+    inicio: 1157
+    fin: 1230
+  - slug: corona-castilla
+    nombre: "Corona de Castilla"
+    inicio: 1230
+    fin: 1516
+  - slug: austrias
+    nombre: "Casa de Austria"
+    inicio: 1516
+    fin: 1700
+  - slug: borbones
+    nombre: "Borbones (cierre nominal)"
+    inicio: 1700
+    fin: 1715
+desc: >
+  Heredera del reino asturiano tras la división de los hijos de Alfonso III
+  el Magno en 910, la corona del noroeste cristiano peninsular vivió un
+  trayecto complejo de fusiones y separaciones. Desde León (910-1037) pasó a
+  unirse temporalmente con Castilla bajo Fernando I (1037), volvió a
+  fragmentarse en dos reinos paralelos entre 1157 y 1230 y se reunificó
+  definitivamente con Fernando III. Como Corona de Castilla absorbió en 1492
+  el reino nazarí de Granada y, desde 1479 mediante unión dinástica con
+  Aragón, dio lugar a la monarquía hispánica. Las titulaciones "rey de León"
+  y "rey de Castilla" se mantuvieron hasta los Decretos de Nueva Planta de
+  Felipe V (1707-1715), que integraron el reino al modelo borbónico
+  centralista. La entidad cubre por tanto desde la separación asturiana hasta
+  la abolición jurídica de la corona de Castilla como reino diferenciado.
+fuentes:
+  - "Sánchez-Albornoz, C. (1965-1980). Estudios sobre las instituciones medievales españolas. UNAM."
+  - "García de Cortázar, J. Á. (1973). La época medieval. Alianza."
+  - "O'Callaghan, J. F. (1975). A History of Medieval Spain. Cornell University Press."
+  - "Rucquoi, A. (1993). Histoire médiévale de la Péninsule Ibérique. Seuil."
+  - "Mínguez Fernández, J. M. (2004). Alfonso VI: poder, expansión y reorganización interior. Nerea."
