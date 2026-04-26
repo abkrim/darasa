@@ -150,6 +150,14 @@ Salvo excepciones indicadas, los retratos proceden de la serie cronológica del 
 
 Los trece soberanos del bloque 824-1234 tienen `img: null` — la serie del Museo del Prado no incluye reyes de Navarra, y los retratos medievales auténticos son escasos o de difícil atribución. Pendiente localizar en Commons retratos medievales o de época para Sancho III el Mayor, García Sánchez III de Nájera, García Ramírez el Restaurador, Sancho VI el Sabio y Sancho VII el Fuerte. Las imágenes se añadirán en una sesión posterior junto a sus atribuciones.
 
+## Retratos de León-Castilla — Austrias y Borbones (siglos XVI-XVIII)
+
+Pendiente localizar retratos para Carlos I (Tiziano, Museo del Prado), Felipe II (Sofonisba Anguissola / Sánchez Coello), Felipe III (Velázquez), Felipe IV (Velázquez), Carlos II (Claudio Coello) y Felipe V. Todos tienen retratos documentados en Commons. Las imágenes se añadirán en una sesión posterior.
+
+## Retratos del Reino de Portugal — Borgoña y Avís (siglos XII-XVI)
+
+Los nueve reyes de la Casa de Borgoña (ids 1-9) tienen `img: null` — no existen retratos fiables de época para los reyes medievales portugueses; la iconografía es principalmente tardía e imaginaria. Para la Casa de Avís (ids 10-17) existen retratos documentados en Commons para João I, Afonso V, João II, Manuel I, João III y Sebastião I. Pendiente descarga y atribución en sesión posterior.
+
 ## Procedencia
 
 Los originales de alta resolución están disponibles en Wikimedia Commons mediante los enlaces de la tabla. Las reducciones locales se generaron con `sips --resampleWidth 240` seguido de `cwebp -q 85 -mt`.
