@@ -108,6 +108,10 @@ Salvo excepciones indicadas, los retratos proceden de la serie cronológica del 
 | `pedro-iv.webp` | [Pere IV el Cerimoniós.jpg](https://commons.wikimedia.org/wiki/File:Pere_IV_el_Cerimon%C3%B3s.jpg) | Miniatura de las Crónicas de Pedro IV | s. XIV |
 | `juan-i-aragon.webp` | [Joan I d'Aragó.jpg](https://commons.wikimedia.org/wiki/File:Joan_I_d%27Arag%C3%B3.jpg) | Retrato imaginario, anónimo | s. XV |
 | `martin-i.webp` | [Martí I l'Humà.jpg](https://commons.wikimedia.org/wiki/File:Mart%C3%AD_I_l%27Hum%C3%A0.jpg) | Retrato, anónimo | s. XV |
+| `fernando-i-aragon.webp` | [Fernando I de Aragón.jpg](https://commons.wikimedia.org/wiki/File:Fernando_I_de_Arag%C3%B3n.jpg) | Retrato imaginario, anónimo | s. XV |
+| `alfonso-v-aragon.webp` | [Alfonso V de Aragón (Pisanello).jpg](https://commons.wikimedia.org/wiki/File:Alfonso_V_de_Arag%C3%B3n_%28Pisanello%29.jpg) | Pisanello (medalla, detalle) | c. 1449 |
+| `juan-ii-aragon.webp` | [Juan II de Aragón.jpg](https://commons.wikimedia.org/wiki/File:Juan_II_de_Arag%C3%B3n.jpg) | Retrato, anónimo | s. XV |
+| `fernando-ii-aragon.webp` | [Fernando el Católico (Sittow).jpg](https://commons.wikimedia.org/wiki/File:Fernando_el_Cat%C3%B3lico_%28Sittow%29.jpg) | Michel Sittow (atribuido) | c. 1500 |
 
 ## Numismática de Al-Ándalus
 
