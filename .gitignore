@@ -51,3 +51,10 @@ desktop.ini
 .copilot/
 .gpt*
 skills-lock.json
+
+# --- Imágenes -------------------------------------------------------------
+# Los retratos no se versionan (reproducibles desde Wikimedia vía ATTRIBUTIONS).
+# El fichero de atribuciones sí se versiona — es la traza legal CC BY-SA.
+public/portraits/
+!public/portraits/ATTRIBUTIONS.md
+
