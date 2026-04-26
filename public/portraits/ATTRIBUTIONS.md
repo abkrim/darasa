@@ -16,9 +16,22 @@ Cumplen la obligación de atribución de Wikimedia Commons al referenciar aquí 
 
 ## Retratos asturianos
 
+Salvo Alfonso III, los retratos asturianos proceden de la serie cronológica encargada por la Comisaría Real para el Museo Nacional, pintada en óleo sobre lienzo entre 1850 y 1856 por Luis de Madrazo y otros artistas, y conservada hoy en el Museo del Prado. Para Alfonso III no existe retrato de esta serie en Commons; se utiliza un grabado de la edición de 1788 *Retratos de los reyes de España, desde Atanarico hasta D. Carlos III*.
+
 | Archivo local | Título original en Commons | Autor / Origen | Año original |
 |---------------|---------------------------|----------------|-------------|
 | `pelayo.webp` | [Don Pelayo, rey de Asturias (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Don_Pelayo,_rey_de_Asturias_(Museo_del_Prado).jpg) | Luis de Madrazo, Museo del Prado | c. 1853-1856 |
+| `favila.webp` | [Don Favila, rey de Asturias (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Don_Favila,_rey_de_Asturias_(Museo_del_Prado).jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `alfonso-i.webp` | [Alfonso I el Católico, rey de Asturias (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Alfonso_I_el_Cat%C3%B3lico,_rey_de_Asturias_(Museo_del_Prado).jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `fruela-i.webp` | [Fruela I de Asturias (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Fruela_I_de_Asturias_(Museo_del_Prado).jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `aurelio.webp` | [Don Aurelio, rey de Asturias (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Don_Aurelio,_rey_de_Asturias_(Museo_del_Prado).jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `silo.webp` | [Silo, rey de Asturias (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Silo,_rey_de_Asturias_(Museo_del_Prado).jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `mauregato.webp` | [El rey Mauregato de Asturias (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:El_rey_Mauregato_de_Asturias_(Museo_del_Prado).jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `bermudo-i.webp` | [Bermudo I el Diácono (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Bermudo_I_el_Di%C3%A1cono_(Museo_del_Prado).jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `alfonso-ii.webp` | [Alfonso II el Casto, rey de Asturias (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Alfonso_II_el_Casto,_rey_de_Asturias_(Museo_del_Prado).jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `ramiro-i.webp` | [Ramiro I de Asturias (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Ramiro_I_de_Asturias_(Museo_del_Prado).jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `ordono-i.webp` | [Ordoño I de Asturias (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Ordo%C3%B1o_I_de_Asturias_(Museo_del_Prado).jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `alfonso-iii.webp` | [Alfonso III el Magno de Asturias.jpg](https://commons.wikimedia.org/wiki/File:Alfonso_III_el_Magno_de_Asturias.jpg) | Grabado de *Retratos de los reyes de España* | 1788 |
 
 ## Numismática de Al-Ándalus
 
