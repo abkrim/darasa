@@ -88,6 +88,27 @@ Salvo excepciones indicadas, los retratos proceden de la serie cronológica del 
 | `ramon-berenguer-iii.webp` | [Ramon Berenguer III the Great, Count of Barcelona (J. Serra).png](https://commons.wikimedia.org/wiki/File:Ramon_Berenguer_III_the_Great%2C_Count_of_Barcelona_%28J._Serra%29.png) | J. Serra, s. XIX | s. XIX |
 | `ramon-berenguer-iv.webp` | [Ramon Berenguer IV.jpg](https://commons.wikimedia.org/wiki/File:Ramon_Berenguer_IV.jpg) | Retrato imaginario, anónimo | s. XIX-XX |
 
+## Retratos del reino y Corona de Aragón
+
+| Archivo local | Título original en Commons | Autor / Origen | Año original |
+|---------------|---------------------------|----------------|-------------|
+| `ramiro-i-aragon.webp` | [Ramiro I de Aragón.jpg](https://commons.wikimedia.org/wiki/File:Ramiro_I_de_Arag%C3%B3n.jpg) | Ariosto (atribuido), copia posterior | s. XVII |
+| `sancho-ramirez.webp` | [Sancho Remíriz.jpg](https://commons.wikimedia.org/wiki/File:Sancho_Rem%C3%ADriz.jpg) | Árbol genealógico de los condes de Barcelona (rotlle) | s. XII |
+| `pedro-i-aragon.webp` | [Pedro I de Aragón.jpg](https://commons.wikimedia.org/wiki/File:Pedro_I_de_Arag%C3%B3n.jpg) | Árbol genealógico de los condes de Barcelona (rotlle) | s. XII |
+| `alfonso-i-el-batallador.webp` | [Alfonso I el Batallador.jpg](https://commons.wikimedia.org/wiki/File:Alfonso_I_el_Batallador.jpg) | Retrato imaginario, anónimo | s. XVII |
+| `ramiro-ii-el-monje.webp` | [Ramiro II de Aragón.jpg](https://commons.wikimedia.org/wiki/File:Ramiro_II_de_Arag%C3%B3n.jpg) | Retrato imaginario, anónimo | s. XVII |
+| `petronila.webp` | [Petronila de Aragón.jpg](https://commons.wikimedia.org/wiki/File:Petronila_de_Arag%C3%B3n.jpg) | Retrato imaginario, anónimo | s. XVII |
+| `alfonso-ii-aragon.webp` | [Alfonso II de Aragón.jpg](https://commons.wikimedia.org/wiki/File:Alfonso_II_de_Arag%C3%B3n.jpg) | Retrato imaginario, anónimo | s. XVII |
+| `pedro-ii.webp` | [Pedro II de Aragón.jpg](https://commons.wikimedia.org/wiki/File:Pedro_II_de_Arag%C3%B3n.jpg) | Retrato imaginario, anónimo | s. XVII |
+| `jaime-i.webp` | [Jaume I de Catalunya-Aragó.jpg](https://commons.wikimedia.org/wiki/File:Jaume_I_de_Catalunya-Arag%C3%B3.jpg) | Retrato, anónimo | s. XIII-XIV |
+| `pedro-iii.webp` | [Pere III el Gran.jpg](https://commons.wikimedia.org/wiki/File:Pere_III_el_Gran.jpg) | Retrato imaginario, anónimo | s. XIV-XV |
+| `alfonso-iii-aragon.webp` | [Alfonso III de Aragón.jpg](https://commons.wikimedia.org/wiki/File:Alfonso_III_de_Arag%C3%B3n.jpg) | Retrato imaginario, anónimo | s. XVII |
+| `jaime-ii.webp` | [Jaume II de Catalunya-Aragó.jpg](https://commons.wikimedia.org/wiki/File:Jaume_II_de_Catalunya-Arag%C3%B3.jpg) | Retrato imaginario, anónimo | s. XIV-XV |
+| `alfonso-iv-aragon.webp` | [Alfonso IV de Aragón.jpg](https://commons.wikimedia.org/wiki/File:Alfonso_IV_de_Arag%C3%B3n.jpg) | Retrato imaginario, anónimo | s. XV |
+| `pedro-iv.webp` | [Pere IV el Cerimoniós.jpg](https://commons.wikimedia.org/wiki/File:Pere_IV_el_Cerimon%C3%B3s.jpg) | Miniatura de las Crónicas de Pedro IV | s. XIV |
+| `juan-i-aragon.webp` | [Joan I d'Aragó.jpg](https://commons.wikimedia.org/wiki/File:Joan_I_d%27Arag%C3%B3.jpg) | Retrato imaginario, anónimo | s. XV |
+| `martin-i.webp` | [Martí I l'Humà.jpg](https://commons.wikimedia.org/wiki/File:Mart%C3%AD_I_l%27Hum%C3%A0.jpg) | Retrato, anónimo | s. XV |
+
 ## Numismática de Al-Ándalus
 
 | Archivo local | Título original en Commons | Tipo | Año |
