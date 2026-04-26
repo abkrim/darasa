@@ -1,10 +1,10 @@
-# Atribuciones — retratos de reyes visigodos
+# Atribuciones — imágenes de soberanos
 
-Los cinco retratos en este directorio proceden de Wikimedia Commons. Todos son obras en dominio público (anteriores al 1 de enero de 1927 según la regulación estadounidense) y se han reproducido localmente con reducción a 240 px de ancho + conversión a WebP (calidad 85) para optimización de carga.
+Las imágenes en este directorio proceden de Wikimedia Commons. Todas son obras en dominio público (anteriores al 1 de enero de 1927 según la regulación estadounidense, o piezas numismáticas históricas sin protección autoral vigente) y se han reproducido localmente con reducción a 240 px de ancho + conversión a WebP (calidad 85) para optimización de carga.
 
 Cumplen la obligación de atribución de Wikimedia Commons al referenciar aquí la fuente original. Cada imagen se distribuye bajo la licencia **CC BY-SA 4.0** del proyecto darasa, compatible con el dominio público de los originales.
 
-## Retratos
+## Retratos visigodos
 
 | Archivo local | Título original en Commons | Autor / Origen | Año original |
 |---------------|---------------------------|----------------|-------------|
@@ -13,6 +13,45 @@ Cumplen la obligación de atribución de Wikimedia Commons al referenciar aquí 
 | `eurico.webp` | [Eurico, rey de los Visigodos (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Eurico,_rey_de_los_Visigodos_(Museo_del_Prado).jpg) | Serie cronológica de los Reyes de España, Museo del Prado | 1854 |
 | `leovigildo.webp` | [El rey Leovigildo (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:El_rey_Leovigildo_(Museo_del_Prado).jpg) | Serie cronológica de los Reyes de España, Museo del Prado | 1854 |
 | `recaredo-i.webp` | [Recaredo I, rey de los Visigodos (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Recaredo_I,_rey_de_los_Visigodos_(Museo_del_Prado).jpg) | Serie cronológica de los Reyes de España, Museo del Prado | 1854 |
+
+## Retratos asturianos
+
+| Archivo local | Título original en Commons | Autor / Origen | Año original |
+|---------------|---------------------------|----------------|-------------|
+| `pelayo.webp` | [Don Pelayo, rey de Asturias (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Don_Pelayo,_rey_de_Asturias_(Museo_del_Prado).jpg) | Luis de Madrazo, Museo del Prado | c. 1853-1856 |
+
+## Numismática de Al-Ándalus
+
+| Archivo local | Título original en Commons | Tipo | Año |
+|---------------|---------------------------|------|-----|
+| `abd-al-rahman-iii.webp` | [Dirham abd al rahman iii 20384.jpg](https://commons.wikimedia.org/wiki/File:Dirham_abd_al_rahman_iii_20384.jpg) | Dírham omeya, anverso y reverso | s. X (acuñación califal) |
+| `al-hakam-ii.webp` | [Dirham al hakam ii 19953.jpg](https://commons.wikimedia.org/wiki/File:Dirham_al_hakam_ii_19953.jpg) | Dírham acuñado en Madinat al-Zahra | 355 H / 965-966 EC |
+| `hisham-ii.webp` | [Dirham hisham ii 20043.jpg](https://commons.wikimedia.org/wiki/File:Dirham_hisham_ii_20043.jpg) | Dírham omeya, anverso y reverso | 395 H / 1004-1005 EC |
+| `yusuf-ibn-tashfin.webp` | [Yusuf Ben Tasfin dinar 22562.jpg](https://commons.wikimedia.org/wiki/File:Yusuf_Ben_Tasfin_dinar_22562.jpg) | Dinar de oro almorávide | s. XI-XII (1086-1106) |
+| `ali-ibn-yusuf.webp` | [Almoravid dinar ali ben yusuf 22312.jpg](https://commons.wikimedia.org/wiki/File:Almoravid_dinar_ali_ben_yusuf_22312.jpg) | Dinar de oro almorávide | s. XII (1106-1143) |
+| `tashfin-ibn-ali.webp` | [Qirat imperio almorávide tasfin 7986.jpg](https://commons.wikimedia.org/wiki/File:Qirat_imperio_almor%C3%A1vide_tasfin_7986.jpg) | Quirate de plata almorávide | 1143-1145 |
+| `abd-al-mumin.webp` | [Diploma de Abd al-Mu'min](https://commons.wikimedia.org/wiki/File:%D8%B8%D9%87%D9%8A%D8%B1_%D8%B9%D8%A8%D8%AF_%D8%A7%D9%84%D9%85%D9%88%D9%85%D9%86_%D8%A8%D9%86_%D8%B9%D9%84%D9%8A_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF%D9%8A_%D8%A7%D9%84%D8%B5%D8%A7%D8%AF%D8%B1_%D8%B3%D9%86%D8%A9_543_%D9%87%D8%AC%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D9%88%D9%81%D9%82_%D9%84_1148_%D9%85%D9%8A%D9%84%D8%A7%D8%AF%D9%8A%D8%A9.jpg) | Diploma chancilleresco almohade | 543 H / 1148 EC |
+| `yusuf-i-almohade.webp` | [Abu Yaqub Yusef Coin.png](https://commons.wikimedia.org/wiki/File:Abu_Yaqub_Yusef_Coin.png) | Moneda almohade | s. XII (1163-1184) |
+| `yaqub-al-mansur.webp` | [Dirham almohade Tlemecen 20549.jpg](https://commons.wikimedia.org/wiki/File:Dirham_almohade_Tlemecen_20549.jpg) | Dírham anónimo almohade, ceca de Tlemecen | s. XII (era almohade plena) |
+| `muhammad-al-nasir.webp` | [Gold coin of Almohad ruler Abu 'Abd Allah Muhammad](https://commons.wikimedia.org/wiki/File:Gold_coin_of_Almohad_ruler_Abu_%27Abd_Allah_Muhammad_(r._1199-1213).jpg) | Dinar de oro almohade | 1199-1213 |
+| `yusuf-ii-al-mustansir.webp` | [Almohad silver dirham LACMA M.2002.1.434](https://commons.wikimedia.org/wiki/File:Almohad_silver_dirham_LACMA_M.2002.1.434_(1_of_2).jpg) | Dírham almohade de plata, colección LACMA | s. XIII (era almohade tardía) |
+| `abd-allah-al-adil.webp` | [Abu Muhammad 'Abd Allah - Almohad AV Dinar](https://commons.wikimedia.org/wiki/File:Abu_Muhammad_%27Abd_Allah_-_Almohad_AV_Dinar_10401144.jpg) | Dinar de oro almohade de al-Adil | 621-624 H / 1224-1227 EC |
+| `muhammad-v.webp` | [Muhammad V Nasrid gold coin.jpg](https://commons.wikimedia.org/wiki/File:Muhammad_V_Nasrid_gold_coin.jpg) | Dinar de oro nazarí | s. XIV (1354-1391) |
+| `yusuf-i-nazari.webp` | [Yusuf I Nasrid gold coin.jpg](https://commons.wikimedia.org/wiki/File:Yusuf_I_Nasrid_gold_coin.jpg) | Dinar de oro nazarí | s. XIV (1333-1354) |
+| `boabdil.webp` | [Casque arabe de Abd Allah Muhammad](https://commons.wikimedia.org/wiki/File:Casque_arabe_de_Abd_Allah_Muhammad,_dit_Boabdil,_dernier_sultan_de_la_dynastie_arabe_nasride_de_Grenade,_PH81211.jpg) | Casco atribuido a Boabdil — Musée de l'Armée | s. XV (atribuido) |
+| `badis-ibn-habus.webp` | [Dirham badis 20656.jpg](https://commons.wikimedia.org/wiki/File:Dirham_badis_20656.jpg) | Dírham zirí de Granada | 1038-1073 |
+| `al-mutadid.webp` | [Dirham almotadid 20320.jpg](https://commons.wikimedia.org/wiki/File:Dirham_almotadid_20320.jpg) | Dírham abbadí de Sevilla | 1042-1069 |
+| `al-muqtadir-ibn-hud.webp` | [Aljafería Palace.jpg](https://commons.wikimedia.org/wiki/File:Aljafer%C3%ADa_Palace.jpg) | Palacio de la Aljafería, Zaragoza | desde 1065 |
+| `al-mutamid-ibn-abbad.webp` | [Tumulo Al-Mu'tamid.jpg](https://commons.wikimedia.org/wiki/File:Tumulo_Al-Mu%27tamid.jpg) | Tumba de al-Mu'tamid en Aghmat, Marruecos | 1095 |
+| `al-qadir.webp` | [Taifa de Toledo al qadir yahya ii 23485.jpg](https://commons.wikimedia.org/wiki/File:Taifa_de_Toledo_al_qadir_yahya_ii_23485.jpg) | Fracción de dinar dhúnnuní | 1075-1085 |
+| `abd-allah-al-mansur.webp` | [Lápida sepulcral de al-Mansur.jpg](https://commons.wikimedia.org/wiki/File:L%C3%A1pida_sepulcral_de_al-Mansur.jpg) | Lápida sepulcral del fundador aftasí | s. XI |
+| `yahya-al-mansur-aftasi.webp` | [Yahya Almansur II fracción de dinar 22504.jpg](https://commons.wikimedia.org/wiki/File:Yahya_Almansur_II_fracci%C3%B3n_de_dinar_22504.jpg) | Fracción de dinar de oro aftasí | 1068-1072 |
+| `abd-al-rahman-i.webp` | [Dirham abd al rahman i 21414.jpg](https://commons.wikimedia.org/wiki/File:Dirham_abd_al_rahman_i_21414.jpg) | Dírham emiral del fundador omeya | 756-788 |
+| `hisham-i.webp` | [Dirham hisham i 21829.jpg](https://commons.wikimedia.org/wiki/File:Dirham_hisham_i_21829.jpg) | Dírham emiral | 788-796 |
+| `al-hakam-i.webp` | [Dirham al hakam i 17521.jpg](https://commons.wikimedia.org/wiki/File:Dirham_al_hakam_i_17521.jpg) | Dírham emiral | 796-822 |
+| `abd-al-rahman-ii.webp` | [Dirham abd al rahman ii 20003.jpg](https://commons.wikimedia.org/wiki/File:Dirham_abd_al_rahman_ii_20003.jpg) | Dírham emiral, ceca Madinat al-Andalus | 822-852 |
+| `muhammad-i.webp` | [Dirham muhammad i 20068.jpg](https://commons.wikimedia.org/wiki/File:Dirham_muhammad_i_20068.jpg) | Dírham emiral | 852-886 |
+| `abd-allah-ibn-muhammad.webp` | [Abdalah felús 20286.jpg](https://commons.wikimedia.org/wiki/File:Abdalah_fel%C3%BAs_20286.jpg) | Felús emiral del último emir omeya | 888-912 |
 
 ## Procedencia
 
