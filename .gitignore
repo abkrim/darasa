@@ -55,6 +55,8 @@ skills-lock.json
 # --- Imágenes -------------------------------------------------------------
 # Los retratos no se versionan (reproducibles desde Wikimedia vía ATTRIBUTIONS).
 # El fichero de atribuciones sí se versiona — es la traza legal CC BY-SA.
-public/portraits/
+# Importante: ignoramos el CONTENIDO del directorio, no el directorio en sí.
+# git no permite re-incluir un fichero cuyo directorio padre está excluido.
+public/portraits/*
 !public/portraits/ATTRIBUTIONS.md
 
