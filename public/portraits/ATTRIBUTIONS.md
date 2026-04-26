@@ -75,6 +75,19 @@ Salvo excepciones indicadas, los retratos proceden de la serie cronológica del 
 | `isabel-i.webp` | [Isabel la Católica (Juan de Flandes).jpg](https://commons.wikimedia.org/wiki/File:Juan_de_Flandes_002.jpg) | Juan de Flandes, c. 1500-1504. Palacio Real de Madrid | c. 1500-1504 |
 | `juana-i.webp` | [Joanna of Castile (Juan de Flandes).jpg](https://commons.wikimedia.org/wiki/File:Juan_de_Flandes_-_Joanna_of_Castile_-_KHM_GG_5612.jpg) | Juan de Flandes, c. 1496-1500. Kunsthistorisches Museum, Viena | c. 1496-1500 |
 
+## Retratos del Condado de Barcelona
+
+| Archivo local | Título original en Commons | Autor / Origen | Año |
+|---|---|---|---|
+| `wifredo-i-el-velloso.webp` | [Wifredo el Velloso Conde de Barcelona - Plaza de Oriente - Madrid 02.jpg](https://commons.wikimedia.org/wiki/File:Wifredo_el_Velloso_Conde_de_Barcelona_-_Plaza_de_Oriente_-_Madrid_02.jpg) | Estatua en la Plaza de Oriente, Madrid | s. XIX |
+| `wifredo-ii-borrell.webp` | [Wifred II of Barcelona.jpg](https://commons.wikimedia.org/wiki/File:Wifred_II_of_Barcelona.jpg) | Retrato imaginario, anónimo | s. XIX-XX |
+| `borrell-ii.webp` | [Rotlle-genealogic-borrell-II-de-barcelona.jpg](https://commons.wikimedia.org/wiki/File:Rotlle-genealogic-borrell-II-de-barcelona.jpg) | Rotlle genealògic dels comtes de Barcelona | s. XII |
+| `ramon-borrell.webp` | [Rotlle-genealogic-ramon-borrell-I-de-barcelona.jpg](https://commons.wikimedia.org/wiki/File:Rotlle-genealogic-ramon-borrell-I-de-barcelona.jpg) | Rotlle genealògic dels comtes de Barcelona | s. XII |
+| `berenguer-ramon-i.webp` | [Rotlle-genealogic-berenguer-ramon-I-de-barcelona.jpg](https://commons.wikimedia.org/wiki/File:Rotlle-genealogic-berenguer-ramon-I-de-barcelona.jpg) | Rotlle genealògic dels comtes de Barcelona | s. XII |
+| `ramon-berenguer-i.webp` | [Ramon Berenguer I, Count of Barcelona (J. Serra).png](https://commons.wikimedia.org/wiki/File:Ramon_Berenguer_I%2C_Count_of_Barcelona_%28J._Serra%29.png) | J. Serra, s. XIX | s. XIX |
+| `ramon-berenguer-iii.webp` | [Ramon Berenguer III the Great, Count of Barcelona (J. Serra).png](https://commons.wikimedia.org/wiki/File:Ramon_Berenguer_III_the_Great%2C_Count_of_Barcelona_%28J._Serra%29.png) | J. Serra, s. XIX | s. XIX |
+| `ramon-berenguer-iv.webp` | [Ramon Berenguer IV.jpg](https://commons.wikimedia.org/wiki/File:Ramon_Berenguer_IV.jpg) | Retrato imaginario, anónimo | s. XIX-XX |
+
 ## Numismática de Al-Ándalus
 
 | Archivo local | Título original en Commons | Tipo | Año |
