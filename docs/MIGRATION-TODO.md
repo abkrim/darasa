@@ -79,27 +79,39 @@ Entidad: `leon-castilla`. Sub_entidades activas en este bloque: `leon`, `castill
 |---|---|---|---|---|
 | 23 | `fernando-iii` | Fernando III el Santo | 1217 Castilla, 1230 unión, hasta 1252 | Hijo de Alfonso IX y Berenguela. Toma Córdoba (1236), Sevilla (1248). Canonizado en 1671. Epíteto canónico |
 
-### Retratos ya descargados (no re-descargar)
+### Retratos a descargar (los 23, ningún pre-descargado)
 
-La sesión Opus de 2026-04-26 dejó 16 de los 23 webp pre-descargados en `public/portraits/`. **Verificar antes de re-descargar:**
+`public/portraits/` contiene únicamente los retratos consolidados de bloques anteriores (Asturias, Al-Ándalus, visigodos parciales). **Los 23 retratos del bloque 910-1230 deben descargarse desde cero.**
 
-✓ Listos: `garcia-i`, `ordono-ii`, `fruela-ii`, `alfonso-iv`, `ordono-iii`, `sancho-i`, `ordono-iv`, `ramiro-iii`, `alfonso-v`, `bermudo-iii`, `fernando-i`, `alfonso-vi`, `urraca-i`, `alfonso-viii`, `enrique-i`, `alfonso-ix`
-
-✗ Faltan (descargar): `ramiro-ii`, `bermudo-ii`, `sancho-ii`, `alfonso-vii`, `sancho-iii`, `fernando-ii`, `fernando-iii`
-
-URLs Wikimedia para los faltantes (todos del Museo del Prado salvo Alfonso VII):
+URLs Wikimedia validadas (16 del Museo del Prado, 7 alternativas):
 
 ```
-ramiro-ii    https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Ramiro_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Ramiro_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
-bermudo-ii   https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Bermudo_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Bermudo_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
-sancho-ii    https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sancho_II_de_Castilla_%28Museo_del_Prado%29.jpg/500px-Sancho_II_de_Castilla_%28Museo_del_Prado%29.jpg
-alfonso-vii  https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Alfonso_VII_el_Emperador%2C_rey_de_Castilla_y_Le%C3%B3n.jpg/500px-Alfonso_VII_el_Emperador%2C_rey_de_Castilla_y_Le%C3%B3n.jpg
-sancho-iii   https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Sancho_III_de_Castilla_%28Museo_del_Prado%29.jpg/500px-Sancho_III_de_Castilla_%28Museo_del_Prado%29.jpg
-fernando-ii  https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Fernando_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Fernando_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
-fernando-iii https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Fernando_III_el_Santo%2C_rey_de_Castilla_y_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Fernando_III_el_Santo%2C_rey_de_Castilla_y_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+garcia-i      https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Garc%C3%ADa_I%2C_rey_de_Le%C3%B3n.jpg/500px-Garc%C3%ADa_I%2C_rey_de_Le%C3%B3n.jpg
+ordono-ii     https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Ordo%C3%B1o_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Ordo%C3%B1o_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+fruela-ii     https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Fruela_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Fruela_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+alfonso-iv    https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Alfonso_IV_el_Monje%2C_rey_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Alfonso_IV_el_Monje%2C_rey_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+ramiro-ii     https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Ramiro_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Ramiro_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+ordono-iii    https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Ordo%C3%B1o_III_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Ordo%C3%B1o_III_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+sancho-i      https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Sancho_I_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Sancho_I_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+ordono-iv     https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ordono_IV_of_Leon_big.jpg/500px-Ordono_IV_of_Leon_big.jpg
+ramiro-iii    https://upload.wikimedia.org/wikipedia/commons/7/7c/Retrato-132-Rey_de_Le%C3%B3n-Ramiro_III.jpg
+bermudo-ii    https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Bermudo_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Bermudo_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+alfonso-v     https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Alfonso_V_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Alfonso_V_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+bermudo-iii   https://upload.wikimedia.org/wikipedia/commons/2/28/Bermudo_III_de_Le%C3%B3n.jpg
+fernando-i    https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Fernando_I%2C_rey_de_Castilla_y_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Fernando_I%2C_rey_de_Castilla_y_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+sancho-ii     https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sancho_II_de_Castilla_%28Museo_del_Prado%29.jpg/500px-Sancho_II_de_Castilla_%28Museo_del_Prado%29.jpg
+alfonso-vi    https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/El_rey_Alfonso_VI_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-El_rey_Alfonso_VI_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+urraca-i      https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Urraca_I%2C_reina_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Urraca_I%2C_reina_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+alfonso-vii   https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Alfonso_VII_el_Emperador%2C_rey_de_Castilla_y_Le%C3%B3n.jpg/500px-Alfonso_VII_el_Emperador%2C_rey_de_Castilla_y_Le%C3%B3n.jpg
+sancho-iii    https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Sancho_III_de_Castilla_%28Museo_del_Prado%29.jpg/500px-Sancho_III_de_Castilla_%28Museo_del_Prado%29.jpg
+alfonso-viii  https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Alonso_VIII_-_Rey_de_Castilla_-_A%C3%B1o_1214_%2811983220125%29.jpg/500px-Alonso_VIII_-_Rey_de_Castilla_-_A%C3%B1o_1214_%2811983220125%29.jpg
+enrique-i     https://upload.wikimedia.org/wikipedia/commons/3/36/Enrique_I_de_Castilla.jpg
+fernando-ii   https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Fernando_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Fernando_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg
+alfonso-ix    https://upload.wikimedia.org/wikipedia/commons/3/39/Alfonso_IX_Rex.jpg
+fernando-iii  https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Fernando_III_el_Santo%2C_rey_de_Castilla_y_Le%C3%B3n_%28Museo_del_Prado%29.jpg/500px-Fernando_III_el_Santo%2C_rey_de_Castilla_y_Le%C3%B3n_%28Museo_del_Prado%29.jpg
 ```
 
-Descargar uno por uno con `sleep 2` entre peticiones para evitar rate limit (HTTP 429) de Wikimedia.
+Descargar **uno por uno con `sleep 2` entre peticiones**. Wikimedia rate-limita (HTTP 429) si se intentan 23 descargas concurrentes.
 
 ### Atribuciones a añadir en ATTRIBUTIONS.md
 

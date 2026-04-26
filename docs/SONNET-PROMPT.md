@@ -18,9 +18,8 @@ Pega esto literal al inicio de una sesión nueva con Claude Sonnet. La sesión O
 >
 > **Tarea concreta:**
 >
-> 1. Comprueba qué retratos están ya en `public/portraits/` (la guía lista los 16 disponibles).
-> 2. Descarga los 7 que faltan (URLs en MIGRATION-TODO.md, sección "León-Castilla 910-1230 → Retratos ya descargados → Faltan"). Hazlo en serie con `sleep 2` entre peticiones para evitar rate-limit 429 de Wikimedia. Si recibes 429, espera 30 segundos y reintenta.
-> 3. Crea los 23 markdowns en `src/content/hispania/soberanos/leon-castilla/<slug>.md`. El orden y los datos de cada rey están en MIGRATION-TODO.md.
+> 1. Descarga los 23 retratos. URLs en MIGRATION-TODO.md, sección "León-Castilla 910-1230 → Retratos a descargar". Hazlo en serie con `sleep 2` entre peticiones para evitar rate-limit 429 de Wikimedia. Si recibes 429, espera 30 segundos y reintenta.
+> 2. Crea los 23 markdowns en `src/content/hispania/soberanos/leon-castilla/<slug>.md`. El orden y los datos de cada rey están en MIGRATION-TODO.md.
 > 4. Aplica el tono historiográfico del feedback de memoria: evitar "Reconquista", matizar mitos, epítetos solo canónicos, sucesiones femeninas en hechos, sin teleología castellanista. La guía y la memoria explican por qué.
 > 5. Actualiza `public/portraits/ATTRIBUTIONS.md` con la nueva sección "## Retratos leoneses y castellanos" (las filas exactas están en MIGRATION-TODO.md).
 > 6. Ejecuta `npm run build` y verifica que las 23 rutas `/hispania/soberanos/<slug>/` se generan.
