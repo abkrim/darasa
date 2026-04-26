@@ -62,6 +62,18 @@ Salvo excepciones indicadas, los retratos proceden de la serie cronológica del 
 | `fernando-ii.webp` | [Fernando II de León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Fernando_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
 | `alfonso-ix.webp` | [Alfonso IX Rex.jpg](https://commons.wikimedia.org/wiki/File:Alfonso_IX_Rex.jpg) | Anónimo / no identificado | s. XIX-XX |
 | `fernando-iii.webp` | [Fernando III el Santo, rey de Castilla y León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Fernando_III_el_Santo%2C_rey_de_Castilla_y_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `alfonso-x.webp` | [Alfonso X el Sabio (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Alfonso_X_el_Sabio_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `sancho-iv.webp` | [Sancho IV de Castilla (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Sancho_IV_de_Castilla_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `fernando-iv.webp` | [Retrato-103-Rey de Castilla-León-Fernando IV.jpg](https://commons.wikimedia.org/wiki/File:Retrato-103-Rey_de_Castilla-Le%C3%B3n-Fernando_IV.jpg) | Grabado de *Retratos de los reyes de España* | 1788 |
+| `alfonso-xi.webp` | [Alfonso XI el Justiciero (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Alfonso_XI_el_Justiciero%2C_rey_de_Castilla_y_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `pedro-i.webp` | [Pedro I el Cruel (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Pedro_I_el_Cruel%2C_rey_de_Castilla_y_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `enrique-ii.webp` | [Enrique II de Castilla.jpg](https://commons.wikimedia.org/wiki/File:Enrique_II_de_Castilla.jpg) | Anónimo / no identificado | s. XIX |
+| `juan-i.webp` | [Juan I rey de Castilla-1390-01.jpg](https://commons.wikimedia.org/wiki/File:Juan_I_rey_de_Castilla-1390-01.jpg) | Ilustración de manuscrito medieval | s. XIV-XV |
+| `enrique-iii.webp` | [Enrique III de Castilla (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Enrique_III_de_Castilla%2C_rey_de_Castilla_y_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `juan-ii.webp` | [Juan II de Castilla (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Juan_II_de_Castilla_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `enrique-iv.webp` | [Enrique IV de Castilla (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Enrique_IV_de_Castilla_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `isabel-i.webp` | [Isabel la Católica (Juan de Flandes).jpg](https://commons.wikimedia.org/wiki/File:Juan_de_Flandes_002.jpg) | Juan de Flandes, c. 1500-1504. Palacio Real de Madrid | c. 1500-1504 |
+| `juana-i.webp` | [Joanna of Castile (Juan de Flandes).jpg](https://commons.wikimedia.org/wiki/File:Juan_de_Flandes_-_Joanna_of_Castile_-_KHM_GG_5612.jpg) | Juan de Flandes, c. 1496-1500. Kunsthistorisches Museum, Viena | c. 1496-1500 |
 
 ## Numismática de Al-Ándalus
 
