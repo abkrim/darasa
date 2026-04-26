@@ -33,6 +33,36 @@ Salvo Alfonso III, los retratos asturianos proceden de la serie cronológica enc
 | `ordono-i.webp` | [Ordoño I de Asturias (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Ordo%C3%B1o_I_de_Asturias_(Museo_del_Prado).jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
 | `alfonso-iii.webp` | [Alfonso III el Magno de Asturias.jpg](https://commons.wikimedia.org/wiki/File:Alfonso_III_el_Magno_de_Asturias.jpg) | Grabado de *Retratos de los reyes de España* | 1788 |
 
+## Retratos leoneses y castellanos
+
+Salvo excepciones indicadas, los retratos proceden de la serie cronológica del Museo del Prado (c. 1850-1856). Los retratos sin número de inventario en Commons son de autoría anónima y dominio público.
+
+| Archivo local | Título original en Commons | Autor / Origen | Año original |
+|---------------|---------------------------|----------------|-------------|
+| `garcia-i.webp` | [García I, rey de León.jpg](https://commons.wikimedia.org/wiki/File:Garc%C3%ADa_I%2C_rey_de_Le%C3%B3n.jpg) | Anónimo / no identificado | s. XIX |
+| `ordono-ii.webp` | [Ordoño II de León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Ordo%C3%B1o_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `fruela-ii.webp` | [Fruela II de León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Fruela_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `alfonso-iv.webp` | [Alfonso IV el Monje, rey de León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Alfonso_IV_el_Monje%2C_rey_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `ramiro-ii.webp` | [Ramiro II de León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Ramiro_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `ordono-iii.webp` | [Ordoño III de León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Ordo%C3%B1o_III_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `sancho-i.webp` | [Sancho I de León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Sancho_I_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `ordono-iv.webp` | [Ordono IV of Leon big.jpg](https://commons.wikimedia.org/wiki/File:Ordono_IV_of_Leon_big.jpg) | Anónimo, retrato imaginario | s. XIX-XX |
+| `ramiro-iii.webp` | [Retrato-132-Rey de León-Ramiro III.jpg](https://commons.wikimedia.org/wiki/File:Retrato-132-Rey_de_Le%C3%B3n-Ramiro_III.jpg) | Grabado de *Retratos de los reyes de España* | 1788 |
+| `bermudo-ii.webp` | [Bermudo II de León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Bermudo_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `alfonso-v.webp` | [Alfonso V de León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Alfonso_V_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `bermudo-iii.webp` | [Bermudo III de León.jpg](https://commons.wikimedia.org/wiki/File:Bermudo_III_de_Le%C3%B3n.jpg) | Anónimo / no identificado | s. XIX-XX |
+| `fernando-i.webp` | [Fernando I, rey de Castilla y León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Fernando_I%2C_rey_de_Castilla_y_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `sancho-ii.webp` | [Sancho II de Castilla (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Sancho_II_de_Castilla_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `alfonso-vi.webp` | [El rey Alfonso VI de León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:El_rey_Alfonso_VI_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `urraca-i.webp` | [Urraca I, reina de León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Urraca_I%2C_reina_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `alfonso-vii.webp` | [Alfonso VII el Emperador, rey de Castilla y León.jpg](https://commons.wikimedia.org/wiki/File:Alfonso_VII_el_Emperador%2C_rey_de_Castilla_y_Le%C3%B3n.jpg) | Anónimo / no identificado | s. XIX |
+| `sancho-iii.webp` | [Sancho III de Castilla (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Sancho_III_de_Castilla_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `alfonso-viii.webp` | [Alonso VIII - Rey de Castilla - Año 1214.jpg](https://commons.wikimedia.org/wiki/File:Alonso_VIII_-_Rey_de_Castilla_-_A%C3%B1o_1214_%2811983220125%29.jpg) | Anónimo / fotografía de retrato del s. XIX | s. XIX |
+| `enrique-i.webp` | [Enrique I de Castilla.jpg](https://commons.wikimedia.org/wiki/File:Enrique_I_de_Castilla.jpg) | Anónimo / retrato genérico | s. XIX-XX |
+| `fernando-ii.webp` | [Fernando II de León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Fernando_II_de_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+| `alfonso-ix.webp` | [Alfonso IX Rex.jpg](https://commons.wikimedia.org/wiki/File:Alfonso_IX_Rex.jpg) | Anónimo / no identificado | s. XIX-XX |
+| `fernando-iii.webp` | [Fernando III el Santo, rey de Castilla y León (Museo del Prado).jpg](https://commons.wikimedia.org/wiki/File:Fernando_III_el_Santo%2C_rey_de_Castilla_y_Le%C3%B3n_%28Museo_del_Prado%29.jpg) | Serie cronológica del Museo del Prado | c. 1850-1856 |
+
 ## Numismática de Al-Ándalus
 
 | Archivo local | Título original en Commons | Tipo | Año |
