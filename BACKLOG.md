@@ -26,7 +26,7 @@ Hallazgos abiertos tras la auditoría del **2026-04-24** (audit v2, post pipelin
 
 ## High severity (resolver primero)
 
-### [ ] H1 · Touch targets de bloques SVG del timeline < 40×40
+### [✓] H1 · Touch targets de bloques SVG del timeline < 40×40
 
 - **Categoría:** Accessibility
 - **Ubicación:** `index.html:122` (constante `ROW_H = 34`), `renderBlock` @ líneas 177-223.
@@ -34,8 +34,9 @@ Hallazgos abiertos tras la auditoría del **2026-04-24** (audit v2, post pipelin
 - **Impacto:** usuario táctil falla al intentar pulsar dinastías cortas. Mitigado porque los chips arriba del SVG son la vía accesible equivalente — pero es redundancia, no reemplazo.
 - **Fix sugerido:** aumentar `ROW_H` a 40 y recalcular `TOP`, `ROW_GAP`, `AXIS_Y` para que el SVG no se corte. Alternativa: rects transparentes extendiendo el hit-area sin cambiar la visual.
 - **Comando:** `/impeccable:harden`
+- **Resolución 2026-04-27:** [✓] En Astro — rects transparentes 44×44 px sobre cada bloque SVG; visual permanece en ROW_H=34.
 
-### [ ] H2 · `line-height: 1.7` hardcoded en `.ficha-desc` y segundo párrafo con `<p style="...">` inline
+### [✓] H2 · `line-height: 1.7` hardcoded en `.ficha-desc` y segundo párrafo con `<p style="...">` inline
 
 - **Categoría:** Theming / UX Writing
 - **Ubicación:** `assets/components.css:662`, `rey/recaredo-i.html:94-96`.
@@ -43,28 +44,31 @@ Hallazgos abiertos tras la auditoría del **2026-04-24** (audit v2, post pipelin
 - **Impacto:** inconsistencia tipográfica + HTML contaminado.
 - **Fix sugerido:** añadir token `--lh-relaxed: 1.7` a `tokens.css` (o decidir que `--lh-body 1.6` es suficiente y unificar). Crear clase `.ficha-body-text` compartida por todos los párrafos del cuerpo. Restringir drop-cap a `.ficha-body-text:first-of-type::first-letter`. Aplicar la clase a los dos `<p>` de Recaredo, eliminando el style inline.
 - **Comando:** `/impeccable:normalize`
+- **Resolución 2026-04-27:** [✓] Token `--lh-relaxed: 1.7` añadido a `tokens.css`. El `<p style="...">` inline es N/A — la versión Astro de `[slug].astro` no tiene estilos inline; el cuerpo del soberano es Markdown que el componente renderiza sin style attr.
 
 ---
 
 ## Medium severity
 
-### [ ] M1 · `.display-italic` utility sin uso
+### [✓] M1 · `.display-italic` utility sin uso
 
 - **Categoría:** Code quality
 - **Ubicación:** `assets/base.css:95-100`.
 - **Problema:** clase definida pero nunca consumida. Los usos reales de Fraunces italic tienen `font-variation-settings` ad-hoc en `.hero-title i`, `.ficha-epithet`, etc.
 - **Fix sugerido:** eliminar la regla, o reconectar el `<i>` del hero (y otras) para consumirla (resolvería L6 de paso).
 - **Comando:** `/impeccable:distill`
+- **Resolución 2026-04-27:** [✓] En Astro — `<i>` del h1 cambiado a `<span class="display-italic">`. La clase ahora está consumida.
 
-### [ ] M2 · `referrerPolicy = 'no-referrer'` en imágenes locales
+### [✓] M2 · `referrerPolicy = 'no-referrer'` en imágenes locales
 
 - **Categoría:** Code quality / Performance
 - **Ubicación:** `dinastia/visigodos.html:149` dentro de `renderCard`.
 - **Problema:** el atributo tenía sentido cuando las imágenes venían de Wikimedia. Tras `/optimize` están en `assets/portraits/` (same-origin) — la línea es no-op.
 - **Fix sugerido:** eliminar, o dejar con comentario explicativo si se quiere como safety-net para imágenes externas futuras.
 - **Comando:** `/impeccable:distill`
+- **Resolución 2026-04-27:** [✓] N/A — resuelto por migración. `[slug].astro` en Astro usa `<Image>` o `<img>` sin `referrerPolicy`, y las imágenes son same-origin desde `public/portraits/`.
 
-### [ ] M3 · Inline script ~300 líneas en `index.html`
+### [✓] M3 · Inline script ~300 líneas en `index.html`
 
 - **Categoría:** Architecture
 - **Ubicación:** `index.html:115-405`.
@@ -72,24 +76,27 @@ Hallazgos abiertos tras la auditoría del **2026-04-24** (audit v2, post pipelin
 - **Impacto:** si se añaden más páginas tipo "timeline" habrá duplicación. Tampoco es cacheable como asset independiente.
 - **Fix sugerido:** extraer a `assets/timeline.js`. Referenciar por ID (`#tl`, `#detail`, `#dyn-chips`) como convención.
 - **Comando:** `/impeccable:extract`
+- **Resolución 2026-04-27:** [✓] N/A — resuelto por migración. `index.astro` genera el timeline en SVG estático sin script inline; la lógica de selección de bloque no existe (clic navega directamente a `/hispania/<slug>`).
 
-### [ ] M4 · Redundancia eyebrow + h3 con el mismo texto en `renderDetail`
+### [✓] M4 · Redundancia eyebrow + h3 con el mismo texto en `renderDetail`
 
 - **Categoría:** UX Writing / Anti-pattern
 - **Ubicación:** `index.html:284-296`.
 - **Problema:** el span `.detail-dyn` muestra `d.name` ("Reino visigodo") e inmediatamente debajo `<h3>` muestra `d.name` otra vez. Lectores de pantalla lo oyen dos veces.
 - **Fix sugerido:** eyebrow como categoría supra ("Timeline · Dinastía" o la era histórica); h3 queda con el nombre. O eliminar el h3 y promover el eyebrow a `<h3>`.
 - **Comando:** `/impeccable:clarify`
+- **Resolución 2026-04-27:** [✓] N/A — resuelto por migración. El panel `renderDetail` del prototipo no existe en Astro; los bloques del SVG navegan directamente a la página de entidad.
 
-### [ ] M5 · `.chip:hover` en light mode hunde la superficie
+### [✓] M5 · `.chip:hover` en light mode hunde la superficie
 
 - **Categoría:** Theming / UX
 - **Ubicación:** `assets/components.css:195`.
 - **Problema:** chip default `bg-soft`, hover → `bg-sunken` (más oscuro). En light mode, hover oscurece = "hunde" la chip. Contra la convención UX (hover eleva). El bug simétrico ya se arregló en dark mode con `[data-theme="dark"] .chip:hover { background: var(--bg); }`.
 - **Fix sugerido:** `.chip:hover` en light → `background: var(--bg)` (blanco, un escalón más arriba), o preservar `bg-soft` con `box-shadow: 0 1px 3px rgba(0,0,0,0.04)` simulando elevación.
 - **Comando:** `/impeccable:polish`
+- **Resolución 2026-04-27:** [✓] En Astro — `.chip:hover` corregido a `background: var(--bg)` + `box-shadow: 0 1px 3px rgba(0,0,0,0.07)` (eleva en light); dark sin cambio.
 
-### [ ] M6 · CTA "Ver reyes" solo para dinastía visigodos
+### [✓] M6 · CTA "Ver reyes" solo para dinastía visigodos
 
 - **Categoría:** UX
 - **Ubicación:** `index.html:352-362`.
@@ -98,17 +105,19 @@ Hallazgos abiertos tras la auditoría del **2026-04-24** (audit v2, post pipelin
   - Opción A: CTA siempre visible con clase `is-disabled` + texto "Próximamente" en las 7 dinastías sin página.
   - Opción B: Esperar a crear las páginas y habilitar el CTA cuando existan (ruta de contenido).
 - **Comando:** `/impeccable:clarify` (+ trabajo de contenido)
+- **Resolución 2026-04-27:** [✓] N/A — resuelto por migración. En Astro los bloques del SVG enlazan directamente a `/hispania/<slug>`; no hay CTA condicional.
 
 ---
 
 ## Low severity
 
-### [ ] L1 · `border-radius: 3px` hardcoded en scrollbar thumb
+### [✓] L1 · `border-radius: 3px` hardcoded en scrollbar thumb
 
 - **Categoría:** Theming
 - **Ubicación:** `assets/components.css:216`.
 - **Fix sugerido:** `border-radius: var(--r-full)` (se clampa al máximo posible = pill exacta). O dejar con comentario `/* intentional — pill on 6px track */`.
 - **Comando:** `/impeccable:normalize`
+- **Resolución 2026-04-27:** [✓] En Astro — `border-radius: var(--r-full)` aplicado en `.tl-wrap::-webkit-scrollbar-thumb`.
 
 ### [ ] L2 · `.hero-meta` con formato métrica AI-template
 
@@ -126,27 +135,30 @@ Hallazgos abiertos tras la auditoría del **2026-04-24** (audit v2, post pipelin
 - **Fix sugerido:** verificar spec de Geist Mono. Si no usa `ss01`, eliminar; si sí, documentar para qué sirve.
 - **Comando:** `/impeccable:distill`
 
-### [ ] L4 · Copy "Toca un bloque" implica solo táctil
+### [✓] L4 · Copy "Toca un bloque" implica solo táctil
 
 - **Categoría:** UX Writing
 - **Ubicación:** `index.html:54` (hero-sub) y `index.html:90` (tl-caption).
 - **Fix sugerido:** "Toca" → "Selecciona" o "Pulsa". Device-neutral.
 - **Comando:** `/impeccable:clarify`
+- **Resolución 2026-04-27:** [✓] En Astro — "Toca" → "Selecciona" en hero-sub y tl-caption de `index.astro`.
 
-### [ ] L5 · Ausencia de Open Graph / Twitter tags + sitemap.xml + robots.txt
+### [✓] L5 · Ausencia de Open Graph / Twitter tags + sitemap.xml + robots.txt
 
 - **Categoría:** SEO / Sharing
 - **Ubicación:** `<head>` de las 3 HTMLs + raíz.
 - **Fix sugerido:** antes de publicar, añadir `og:title/description/image/type=article`, sitemap generado, y decidir política de robots.
 - **Comando:** `/impeccable:seo` o custom
+- **Resolución 2026-04-27:** [✓] En Astro — `Layout.astro` con prop `ogImage`, canonical, OG+Twitter completos. `astro.config.mjs` con `@astrojs/sitemap`. `public/robots.txt` creado.
 
-### [ ] L6 · `<i>` como elemento de estilo decorativo
+### [✓] L6 · `<i>` como elemento de estilo decorativo
 
 - **Categoría:** Semantic HTML
 - **Ubicación:** `index.html:52` — `<h1>Los reyes e imperios, <i>contados en cronología</i>.</h1>`.
 - **Problema:** HTML5 define `<i>` como "alternate voice/mood" — aplicable borderline. Más limpio: `<span class="display-italic">` (resolvería M1 de paso) o `<em>` si quiere expresar énfasis real.
 - **Fix sugerido:** decidir semántica. Mantener `<i>` si es sólo estilo, migrar a `<span class="display-italic">` si se refactoriza M1.
 - **Comando:** `/impeccable:polish` o `/impeccable:distill`
+- **Resolución 2026-04-27:** [✓] En Astro — `<i>` → `<span class="display-italic">` en el h1 de `index.astro`. Resuelve M1 de paso.
 
 ---
 
@@ -180,4 +192,6 @@ Para cambios arquitectónicos registrar aquí fecha + decisión + razón, con el
 
 | Fecha | Decisión | Razón |
 |-------|----------|-------|
-| — | — | — |
+| 2026-04-27 | H1: rect transparente overlay en lugar de aumentar ROW_H | Cambiar ROW_H obligaría a recalcular toda la geometría SVG (TOP, ROW_GAP, axisY). La solución de overlay mantiene la visual intacta y cumple WCAG 2.5.8. |
+| 2026-04-27 | M5: chip hover → `--bg` + box-shadow en lugar de `--bg-sunken` | `--bg-sunken` oscurece en light (hunde). `--bg` eleva un paso. Box-shadow leve simula elevación sin color. En dark se mantiene `--bg` del fix anterior (ya era correcto). |
+| 2026-04-27 | Block D (Taifas menores): opción A — entidades de período sin fichas individuales | Documentación secundaria fragmentaria para la mayoría; iconografía fiable ausente. Fichas vacías dañan la credibilidad. Nota editorial con llamada a colaboradores. |
