@@ -19,6 +19,24 @@ const soberanos = await getCollection(
 );
 const sorted = soberanos.sort((a, b) => a.data.id - b.data.id);
 
+// Render order with linaje grouping. Items without `linaje` render as single
+// cards in id order. Items with `linaje` are pulled into a group anchored to
+// the position of the first member encountered, so chronology stays correct.
+const renderItems = [];
+const linajesEmitidos = new Set();
+for (const sob of sorted) {
+  if (sob.data.linaje) {
+    if (!linajesEmitidos.has(sob.data.linaje)) {
+      linajesEmitidos.add(sob.data.linaje);
+      const items = sorted.filter((s) => s.data.linaje === sob.data.linaje);
+      renderItems.push({ type: 'header', linaje: sob.data.linaje });
+      for (const it of items) renderItems.push({ type: 'card', sob: it });
+    }
+  } else {
+    renderItems.push({ type: 'card', sob });
+  }
+}
+
 const colorVar = entidad.colorVar;
 const dynColor = `var(${colorVar}-ink)`;
 const dynColorSolid = `var(${colorVar}-solid)`;
@@ -87,41 +105,56 @@ const rangoLabel = sorted.length > 0
       </header>
 
       {sorted.length === 0 ? (
-        <p class="empty-state">
-          Aún no hay soberanos cargados para esta entidad. Ver <code>CLAUDE.md</code> para añadir uno.
-        </p>
+        entidad.sub_entidades && entidad.sub_entidades.length > 0 ? (
+          <ul class="lista-subentidades">
+            {entidad.sub_entidades.map((sub) => (
+              <li>
+                <span class="lista-subentidades-nombre">{sub.nombre}</span>
+                <span class="lista-subentidades-years numeric">{sub.inicio}–{sub.fin}</span>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p class="empty-state">
+            Aún no hay soberanos cargados para esta entidad. Ver <code>CLAUDE.md</code> para añadir uno.
+          </p>
+        )
       ) : (
         <div class="grid-reyes" role="list">
-          {sorted.map((sob) => (
-            <a
-              class="card-rey"
-              href={`/hispania/soberanos/${sob.data.slug}`}
-              role="listitem"
-              aria-label={`${sob.data.nombre}${sob.data.epiteto ? `, ${sob.data.epiteto}` : ''}, reinó del ${sob.data.inicio} al ${sob.data.fin ?? 'presente'}`}
-            >
-              <div class="card-rey-thumb">
-                <span class="card-rey-num">{toRoman(sob.data.id)}</span>
-                {sob.data.img ? (
-                  <img
-                    src={sob.data.img}
-                    alt={`Retrato de ${sob.data.nombre}`}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                ) : (
-                  <span class="card-rey-placeholder" aria-hidden="true">
-                    {firstLetter(sob.data.nombre)}
-                  </span>
-                )}
-              </div>
-              <div class="card-rey-body">
-                <div class="card-rey-name">{sob.data.nombre}</div>
-                <div class="card-rey-years">
-                  {sob.data.inicio}–{sob.data.fin ?? 'hoy'}
+          {renderItems.map((item) =>
+            item.type === 'header' ? (
+              <h3 class="linaje-head">{item.linaje}</h3>
+            ) : (
+              <a
+                class="card-rey"
+                href={`/hispania/soberanos/${item.sob.data.slug}`}
+                role="listitem"
+                aria-label={`${item.sob.data.nombre}${item.sob.data.epiteto ? `, ${item.sob.data.epiteto}` : ''}, reinó del ${item.sob.data.inicio} al ${item.sob.data.fin ?? 'presente'}`}
+              >
+                <div class="card-rey-thumb">
+                  <span class="card-rey-num">{toRoman(item.sob.data.id)}</span>
+                  {item.sob.data.img ? (
+                    <img
+                      src={item.sob.data.img}
+                      alt={`Retrato de ${item.sob.data.nombre}`}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  ) : (
+                    <span class="card-rey-placeholder" aria-hidden="true">
+                      {firstLetter(item.sob.data.nombre)}
+                    </span>
+                  )}
                 </div>
-              </div>
-            </a>
-          ))}
+                <div class="card-rey-body">
+                  <div class="card-rey-name">{item.sob.data.nombre}</div>
+                  <div class="card-rey-years">
+                    {item.sob.data.inicio}–{item.sob.data.fin ?? 'hoy'}
+                  </div>
+                </div>
+              </a>
+            ),
+          )}
         </div>
       )}
     </section>

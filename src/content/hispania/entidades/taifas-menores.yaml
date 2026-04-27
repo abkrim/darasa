@@ -1,0 +1,81 @@
+slug: taifas-menores
+nombre: "Taifas menores"
+tipo: taifa
+inicio: 1011
+fin: 1262
+colorVar: "--c-andalus"
+sub_entidades:
+  - slug: almeria
+    nombre: "Taifa de Almería"
+    inicio: 1014
+    fin: 1091
+  - slug: murcia
+    nombre: "Taifa de Murcia"
+    inicio: 1031
+    fin: 1172
+  - slug: denia
+    nombre: "Taifa de Denia (con Baleares)"
+    inicio: 1010
+    fin: 1076
+  - slug: alpuente
+    nombre: "Taifa de Alpuente"
+    inicio: 1031
+    fin: 1106
+  - slug: albarracin
+    nombre: "Taifa de Albarracín"
+    inicio: 1011
+    fin: 1104
+  - slug: niebla
+    nombre: "Taifa de Niebla"
+    inicio: 1023
+    fin: 1262
+  - slug: silves
+    nombre: "Taifa de Silves"
+    inicio: 1031
+    fin: 1063
+  - slug: algeciras
+    nombre: "Taifa de Algeciras"
+    inicio: 1031
+    fin: 1058
+  - slug: ronda
+    nombre: "Taifa de Ronda"
+    inicio: 1039
+    fin: 1065
+  - slug: malaga
+    nombre: "Taifa de Málaga (hammudí)"
+    inicio: 1026
+    fin: 1057
+  - slug: mertola
+    nombre: "Taifa de Mértola"
+    inicio: 1144
+    fin: 1151
+  - slug: carmona
+    nombre: "Taifa de Carmona"
+    inicio: 1013
+    fin: 1067
+  - slug: arcos
+    nombre: "Taifa de Arcos"
+    inicio: 1011
+    fin: 1068
+  - slug: moron
+    nombre: "Taifa de Morón"
+    inicio: 1013
+    fin: 1066
+desc: >
+  Reinos taifas peninsulares secundarios constituidos a partir del colapso del
+  califato de Córdoba (1031) y, en algunos casos, ya antes durante la fitna
+  (1009-1031). A diferencia de las seis taifas mayores — Sevilla, Toledo,
+  Zaragoza, Granada zirí, Badajoz y Valencia, documentadas con sus dinastías
+  propias dentro de Al-Ándalus —, estas catorce ciudades-estado tuvieron vida
+  política más breve o se mantuvieron como sub-poderes locales bajo dinastías
+  menores: eslavones (Almería, Murcia, Denia), bereberes zanatas y miknasa
+  (Carmona, Arcos, Morón, Albarracín), hammudíes desplazados desde Córdoba
+  (Málaga, Algeciras), o linajes árabes locales (Niebla, Silves). La mayoría
+  fueron absorbidas durante la conquista almorávide entre 1090 y 1110; algunas
+  reaparecieron como segundas taifas (1144-1170s) entre el colapso almorávide
+  y la implantación almohade. Niebla persistió como reino tributario hasta
+  1262, cuando Alfonso X la incorporó a la corona de Castilla.
+fuentes:
+  - "Wasserstein, D. (1985). The Rise and Fall of the Party-Kings: Politics and Society in Islamic Spain, 1002-1086. Princeton."
+  - "Viguera Molins, M. J. (coord.) (1994). Los reinos de taifas: al-Andalus en el siglo XI. Vol. VIII de Historia de España Menéndez Pidal, Espasa-Calpe."
+  - "Guichard, P. (2001). Al-Andalus frente a la conquista cristiana. Universitat de València / Biblioteca Nueva."
