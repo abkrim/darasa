@@ -2,7 +2,7 @@
 
 Plantilla y prompts específicos para arrancar sesiones de migración de soberanos en darasa con Claude Sonnet (más barato, suficiente para procedimiento mecánico).
 
-**Última actualización:** 2026-04-27. Estado del repo: 233 soberanos migrados, 244 páginas en build, working tree limpio. Bloque A (Pamplona-Navarra post-1234) completado.
+**Última actualización:** 2026-04-27. Estado del repo: 247 soberanos migrados, 258 páginas en build, working tree limpio. Bloques A (Pamplona-Navarra post-1234) y B (Reino de Portugal Bragança) completados.
 
 ## Cómo usar este archivo
 
@@ -130,8 +130,8 @@ npm run build                                      # build verde, páginas esper
 Páginas esperadas tras cada bloque (estado actual: 244 tras Bloque A):
 
 - ~~Bloque A (Pamplona-Navarra post-1234)~~ — **✓ HECHO**: 244 páginas.
-- Tras Bloque B (Bragança, 14): ~258
-- Tras Bloque C (Aragón documental): 244 (sin fichas nuevas)
+- ~~Bloque B (Bragança, 14)~~ — **✓ HECHO**: 258 páginas.
+- Tras Bloque C (Aragón documental): 258 (sin fichas nuevas)
 
 Y revisar visualmente algún markdown al azar para confirmar tono y schema:
 

@@ -18,12 +18,12 @@ Estado a 2026-04-27. Actualizar cada vez que se complete un bloque.
 | **Aragón Habsburgo/Borbón** | **0 / ~6** | **~6** | **Carlos I → Felipe V (Decretos Nueva Planta 1707)** |
 | Cataluña / Barcelona | 11 / ~11 | ✓ completa | — |
 | Reino de Portugal Borgoña + Avís | 17 / 17 | ✓ completa | — |
-| **Reino de Portugal Bragança** | **0 / ~14** | **~14** | **João IV → Manuel II (1640-1910)** |
+| Reino de Portugal Bragança | 14 / 14 | ✓ completa | — |
 | Taifas-menores | 0 / ~30 | ~30 | a decidir si se pueblan o se dejan como agregado |
 
-**Total estimado pendiente:** ~20 soberanos en 2 bloques activos (sin contar taifas-menores).
+**Total estimado pendiente:** ~6 soberanos en 1 bloque activo (sin contar taifas-menores, que no son fichas nuevas).
 
-**Estado del build:** 244 páginas, 0 errores Zod (2026-04-27).
+**Estado del build:** 258 páginas, 0 errores Zod (2026-04-27).
 
 ## Pamplona-Navarra post-1234 (bloque pendiente)
 
@@ -85,7 +85,7 @@ Bragança (1640-1910), 14 reyes a migrar:
 ## Próximas sesiones
 
 1. ~~**Pamplona-Navarra post-1234**~~ — **✓ COMPLETADO** (commit `27cd9a9`). 18 soberanos ids 14-31, 244 páginas.
-2. **Reino de Portugal — Bragança** — 14 soberanos 1640-1910. Slug-collision resuelta: `carlos-i-portugal.md` (regla nueva: Castilla sin sufijo, otros con -<entidad>).
+2. ~~**Reino de Portugal — Bragança**~~ — **✓ COMPLETADO** (commit `8532838`). 14 soberanos ids 18-31, 258 páginas.
 3. **Aragón Habsburgo/Borbón** — sin soberanos nuevos (todos ya en `leon-castilla`). Bloque ligero, solo nota narrativa sobre Decretos de Nueva Planta 1707 si se considera necesario.
 4. **Taifas-menores** — entidad esqueleto creada (`entidades/taifas-menores.yaml`). Decidir si poblar con soberanos individuales o mantener como agregado documental.
 
