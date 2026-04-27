@@ -19,7 +19,7 @@ Estado a 2026-04-27. Actualizar cada vez que se complete un bloque.
 | Cataluña / Barcelona | 11 / ~11 | ✓ completa | — |
 | Reino de Portugal Borgoña + Avís | 17 / 17 | ✓ completa | — |
 | Reino de Portugal Bragança | 14 / 14 | ✓ completa | — |
-| Taifas-menores | 0 / ~30 | ~30 | a decidir si se pueblan o se dejan como agregado |
+| Taifas-menores | — / — | ✓ decisión cerrada | Agregado documental con nota editorial; sin fichas de emires por documentación fragmentaria e iconografía ausente |
 
 **Total estimado pendiente:** 0 soberanos en bloques activos. Solo queda la decisión sobre Taifas-menores (poblar o mantener como agregado).
 
@@ -87,6 +87,6 @@ Bragança (1640-1910), 14 reyes a migrar:
 1. ~~**Pamplona-Navarra post-1234**~~ — **✓ COMPLETADO** (commit `27cd9a9`). 18 soberanos ids 14-31, 244 páginas.
 2. ~~**Reino de Portugal — Bragança**~~ — **✓ COMPLETADO** (commit `8532838`). 14 soberanos ids 18-31, 258 páginas.
 3. ~~**Aragón Habsburgo/Borbón**~~ — **✓ COMPLETADO** (verificación). Sin fichas nuevas: los 6 reyes ya están en `leon-castilla` con `aragon` en `tambien_reino_en`. El `aragon.yaml` ya tenía `sub_entidad austrias-borbon` y nota narrativa sobre los Decretos de Nueva Planta de 1707.
-4. **Taifas-menores** — entidad esqueleto creada (`entidades/taifas-menores.yaml`). Decidir si poblar con soberanos individuales o mantener como agregado documental.
+4. ~~**Taifas-menores**~~ — **✓ DECISIÓN CERRADA**. Mantenidas como agregado documental. La `desc` del YAML incluye nota editorial explicando la decisión (documentación fragmentaria, iconografía ausente) y llamada a colaboradores. Sin fichas de emires.
 
 Cada sesión: ~10-15 reyes en formato Sonnet siguiendo `MIGRATION-GUIDE.md`. Verificación final con `npm run build` y commit limpio.
