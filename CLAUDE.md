@@ -81,7 +81,7 @@ El trabajo de migrar reyes de las distintas coronas se hace en sesiones acotadas
 
 El **tono historiográfico obligatorio** está consolidado como memoria del proyecto en `~/.claude/projects/-Users-abkrim-SitesWeb-ibrahim-darasa/memory/feedback_historiographic_tone.md`. Resumen: factual y matizado, evitar "Reconquista", epítetos solo canónicos, sucesiones femeninas en `hechos`, sin teleología castellanista.
 
-**Estado a 2026-04-26:** completos visigodos parciales (1/31), Asturias (12/12), Al-Ándalus (parcial — verificar), entidades de León-Castilla, Pamplona-Navarra, Aragón, Cataluña y Reino de Portugal creadas como esqueletos. Bloque siguiente recomendado: León-Castilla 910-1230 (23 reyes) — instrucciones en `SONNET-PROMPT.md`.
+**Estado a 2026-04-27:** Visigodos (31/31), Asturias (12/12), Al-Ándalus (71/71), León-Castilla 910-1715 (41/41 — incluye Austrias y primer Borbón), Pamplona-Navarra 824-1234 (13/13), Aragón medieval + Trastámara (20/20), Cataluña (11/11), Reino de Portugal Borgoña + Avís (17/17). Build estable: 226 páginas, 0 errores Zod. Bloques pendientes: Pamplona-Navarra post-1234 (~22), Reino de Portugal Bragança (14, 1640-1910), Taifas-menores (decidir si se pueblan). Aragón Habsburgo/Borbón ya cubierto vía `tambien_reino_en` desde `leon-castilla`. Detalles y decisiones en `docs/MIGRATION-TODO.md`; prompts de sesión en `docs/SONNET-PROMPT.md`.
 
 ## Content workflow
 
