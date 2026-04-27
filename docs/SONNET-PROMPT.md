@@ -131,7 +131,7 @@ Páginas esperadas tras cada bloque (estado actual: 244 tras Bloque A):
 
 - ~~Bloque A (Pamplona-Navarra post-1234)~~ — **✓ HECHO**: 244 páginas.
 - ~~Bloque B (Bragança, 14)~~ — **✓ HECHO**: 258 páginas.
-- Tras Bloque C (Aragón documental): 258 (sin fichas nuevas)
+- ~~Bloque C (Aragón documental)~~ — **✓ HECHO**: 258 páginas (sin fichas nuevas, solo verificación).
 
 Y revisar visualmente algún markdown al azar para confirmar tono y schema:
 

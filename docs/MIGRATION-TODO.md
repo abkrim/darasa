@@ -15,13 +15,13 @@ Estado a 2026-04-27. Actualizar cada vez que se complete un bloque.
 | Pamplona-Navarra 824-1234 (Arista + Jiménez) | 13 / 13 | ✓ completa | — |
 | Pamplona-Navarra post-1234 | 18 / 18 | ✓ completa | — |
 | Aragón medieval + Trastámara | 20 / 20 | ✓ completa | — |
-| **Aragón Habsburgo/Borbón** | **0 / ~6** | **~6** | **Carlos I → Felipe V (Decretos Nueva Planta 1707)** |
+| Aragón Habsburgo/Borbón | — / — | ✓ sin fichas nuevas | Cubierto vía `tambien_reino_en` desde `leon-castilla`; `aragon.yaml` ya tiene sub_entidad y nota narrativa |
 | Cataluña / Barcelona | 11 / ~11 | ✓ completa | — |
 | Reino de Portugal Borgoña + Avís | 17 / 17 | ✓ completa | — |
 | Reino de Portugal Bragança | 14 / 14 | ✓ completa | — |
 | Taifas-menores | 0 / ~30 | ~30 | a decidir si se pueblan o se dejan como agregado |
 
-**Total estimado pendiente:** ~6 soberanos en 1 bloque activo (sin contar taifas-menores, que no son fichas nuevas).
+**Total estimado pendiente:** 0 soberanos en bloques activos. Solo queda la decisión sobre Taifas-menores (poblar o mantener como agregado).
 
 **Estado del build:** 258 páginas, 0 errores Zod (2026-04-27).
 
@@ -86,7 +86,7 @@ Bragança (1640-1910), 14 reyes a migrar:
 
 1. ~~**Pamplona-Navarra post-1234**~~ — **✓ COMPLETADO** (commit `27cd9a9`). 18 soberanos ids 14-31, 244 páginas.
 2. ~~**Reino de Portugal — Bragança**~~ — **✓ COMPLETADO** (commit `8532838`). 14 soberanos ids 18-31, 258 páginas.
-3. **Aragón Habsburgo/Borbón** — sin soberanos nuevos (todos ya en `leon-castilla`). Bloque ligero, solo nota narrativa sobre Decretos de Nueva Planta 1707 si se considera necesario.
+3. ~~**Aragón Habsburgo/Borbón**~~ — **✓ COMPLETADO** (verificación). Sin fichas nuevas: los 6 reyes ya están en `leon-castilla` con `aragon` en `tambien_reino_en`. El `aragon.yaml` ya tenía `sub_entidad austrias-borbon` y nota narrativa sobre los Decretos de Nueva Planta de 1707.
 4. **Taifas-menores** — entidad esqueleto creada (`entidades/taifas-menores.yaml`). Decidir si poblar con soberanos individuales o mantener como agregado documental.
 
 Cada sesión: ~10-15 reyes en formato Sonnet siguiendo `MIGRATION-GUIDE.md`. Verificación final con `npm run build` y commit limpio.
