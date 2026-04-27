@@ -80,7 +80,7 @@ button {
 .numeric {
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums slashed-zero;
-  font-feature-settings: "tnum" 1, "zero" 1, "ss01" 1;
+  font-feature-settings: "tnum" 1, "zero" 1;
 }
 
 .eyebrow {

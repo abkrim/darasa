@@ -119,21 +119,23 @@ Hallazgos abiertos tras la auditoría del **2026-04-24** (audit v2, post pipelin
 - **Comando:** `/impeccable:normalize`
 - **Resolución 2026-04-27:** [✓] En Astro — `border-radius: var(--r-full)` aplicado en `.tl-wrap::-webkit-scrollbar-thumb`.
 
-### [ ] L2 · `.hero-meta` con formato métrica AI-template
+### [✓] L2 · `.hero-meta` con formato métrica AI-template
 
 - **Categoría:** Anti-pattern
 - **Ubicación:** `index.html:56-61`.
 - **Problema:** "1607 años · 8 dinastías · 80+ monarcas · CC BY-SA 4.0" se lee como el pattern "hero metrics row" genérico de AI. Mitigado (inline, sin gradient), pero es un tell.
 - **Fix sugerido:** mezclar información no métrica, o eliminar el row y dejar solo h1 + hero-sub.
 - **Comando:** `/impeccable:distill`
+- **Resolución 2026-04-27:** [✓] Eliminado span CC BY-SA del hero-meta (redundante con footer). Quedan 3 stats genuinas con `class="numeric"`. Texto ampliado: "entidades políticas" y "soberanos documentados" — más específico, menos genérico.
 
-### [ ] L3 · `font-feature-settings: "ss01"` en `.numeric` — posible código muerto
+### [✓] L3 · `font-feature-settings: "ss01"` en `.numeric` — posible código muerto
 
 - **Categoría:** Code quality / Performance
 - **Ubicación:** `assets/base.css:83`.
 - **Problema:** declarado en `.numeric` (que usa Geist Mono). Si Geist Mono no define `ss01`, es no-op. Si lo define, aplica un stylistic set no documentado en DESIGN.md.
 - **Fix sugerido:** verificar spec de Geist Mono. Si no usa `ss01`, eliminar; si sí, documentar para qué sirve.
 - **Comando:** `/impeccable:distill`
+- **Resolución 2026-04-27:** [✓] Eliminado `"ss01" 1` de `font-feature-settings` en `.numeric`. No documentado en DESIGN.md; `font-variant-numeric: tabular-nums slashed-zero` ya cubre tnum y zero de forma semántica.
 
 ### [✓] L4 · Copy "Toca un bloque" implica solo táctil
 
