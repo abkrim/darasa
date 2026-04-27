@@ -175,6 +175,25 @@ Bloque post-1234 (Champaña, Capeto, Évreux, Trastámara-Foix), 16 retratos + 2
 
 Pendiente localizar retratos para Carlos I (Tiziano, Museo del Prado), Felipe II (Sofonisba Anguissola / Sánchez Coello), Felipe III (Velázquez), Felipe IV (Velázquez), Carlos II (Claudio Coello) y Felipe V. Todos tienen retratos documentados en Commons. Las imágenes se añadirán en una sesión posterior.
 
+## Retratos del Reino de Portugal — Bragança (siglos XVII-XX)
+
+| Archivo | Enlace a Commons | Autor / Fuente | Fecha |
+|---|---|---|---|
+| `joao-iv.webp` | [João IV de Portugal, José de Avelar Rebelo, 1643](https://commons.wikimedia.org/wiki/File:Jo%C3%A3o_IV_of_Portugal.jpg) | José de Avelar Rebelo | 1643 |
+| `afonso-vi.webp` | [Afonso VI de Portugal, Henrique Ferreira, 1718](https://commons.wikimedia.org/wiki/File:Afonso_VI_of_Portugal.jpg) | Henrique Ferreira | 1718 |
+| `pedro-ii-portugal.webp` | [Pedro II de Portugal, anónimo](https://commons.wikimedia.org/wiki/File:Pedro_II_of_Portugal.jpg) | Anónimo | c. 1700 |
+| `joao-v.webp` | [João V de Portugal, Pierre Gobert](https://commons.wikimedia.org/wiki/File:Jo%C3%A3o_V_of_Portugal.jpg) | Pierre Gobert | c. 1720 |
+| `jose-i.webp` | [José I de Portugal, Miguel António do Amaral](https://commons.wikimedia.org/wiki/File:Jos%C3%A9_I_of_Portugal.jpg) | Miguel António do Amaral | c. 1760 |
+| `maria-i.webp` | [Maria I de Portugal, Giuseppe Troni, 1783](https://commons.wikimedia.org/wiki/File:Maria_I_of_Portugal.jpg) | Giuseppe Troni | 1783 |
+| `joao-vi.webp` | [João VI de Portugal, Domingos António de Sequeira](https://commons.wikimedia.org/wiki/File:Jo%C3%A3o_VI_of_Portugal.jpg) | Domingos António de Sequeira | c. 1821 |
+| `pedro-iv-portugal.webp` | [Pedro IV de Portugal / Pedro I de Brasil, Nicolas-Louis-Albert Maurin](https://commons.wikimedia.org/wiki/File:Pedro_I_Brasil.jpg) | Nicolas-Louis-Albert Maurin | c. 1830 |
+| `maria-ii.webp` | [Maria II de Portugal, Friedrich Salabert, 1838](https://commons.wikimedia.org/wiki/File:Maria_II_of_Portugal.jpg) | Friedrich Salabert | 1838 |
+| `miguel-i.webp` | [Miguel I de Portugal, Johann Baptist Lampi el Joven](https://commons.wikimedia.org/wiki/File:Miguel_I_of_Portugal.jpg) | Johann Baptist Lampi el Joven | c. 1835 |
+| `pedro-v.webp` | [Pedro V de Portugal, fotografía](https://commons.wikimedia.org/wiki/File:Pedro_V_of_Portugal.jpg) | Fotografía anónima | c. 1860 |
+| `luis-i-portugal.webp` | [D. Luís I fotografado por Augusto Bobone em 1885](https://commons.wikimedia.org/wiki/File:D._Lu%C3%ADs_I_fotografado_por_Augusto_Bobone_em_1885.png) | Augusto Bobone | 1885 |
+| `carlos-i-portugal.webp` | [Carlos I de Portugal, fotografía](https://commons.wikimedia.org/wiki/File:Carlos_I_of_Portugal.jpg) | Fotografía anónima | c. 1900 |
+| `manuel-ii.webp` | [Manuel II de Portugal, fotografía](https://commons.wikimedia.org/wiki/File:Manuel_II_of_Portugal.jpg) | Fotografía anónima | c. 1910 |
+
 ## Retratos del Reino de Portugal — Borgoña y Avís (siglos XII-XVI)
 
 Los nueve reyes de la Casa de Borgoña (ids 1-9) tienen `img: null` — no existen retratos fiables de época para los reyes medievales portugueses; la iconografía es principalmente tardía e imaginaria. Para la Casa de Avís (ids 10-17) existen retratos documentados en Commons para João I, Afonso V, João II, Manuel I, João III y Sebastião I. Pendiente descarga y atribución en sesión posterior.
