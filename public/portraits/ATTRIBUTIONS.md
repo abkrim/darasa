@@ -150,6 +150,27 @@ Salvo excepciones indicadas, los retratos proceden de la serie cronológica del 
 
 Los trece soberanos del bloque 824-1234 tienen `img: null` — la serie del Museo del Prado no incluye reyes de Navarra, y los retratos medievales auténticos son escasos o de difícil atribución. Pendiente localizar en Commons retratos medievales o de época para Sancho III el Mayor, García Sánchez III de Nájera, García Ramírez el Restaurador, Sancho VI el Sabio y Sancho VII el Fuerte. Las imágenes se añadirán en una sesión posterior junto a sus atribuciones.
 
+Bloque post-1234 (Champaña, Capeto, Évreux, Trastámara-Foix), 16 retratos + 2 con `img: null` (Juan I y Leonor I, reinados de días sin retrato posible):
+
+| Archivo local | Título original en Commons | Autor / Origen | Año original |
+|---------------|---------------------------|----------------|-------------|
+| `teobaldo-i.webp` | [Theobald I of Navarre 2.jpg](https://commons.wikimedia.org/wiki/File:Theobald_I_of_Navarre_2.jpg) | Anónimo, *Chansonnier de Thibaut IV de Champagne* | s. XIII |
+| `teobaldo-ii.webp` | [Teobaldo II de Navarra.jpg](https://commons.wikimedia.org/wiki/File:Teobaldo_II_de_Navarra.jpg) | Francisco Mendoza (atrib.) | s. XVII |
+| `enrique-i-navarra.webp` | [Henry 01 Navarre.jpg](https://commons.wikimedia.org/wiki/File:Henry_01_Navarre.jpg) | Anónimo | s. XVI-XVII |
+| `juana-i-navarra.webp` | [Jeanne de Navarre et Marie de Brabant.png](https://commons.wikimedia.org/wiki/File:Jeanne_de_Navarre_et_Marie_de_Brabant.png) | Girart d'Amiens, miniatura | 1285 |
+| `felipe-i.webp` | [Portret van Filips IV van Frankrijk, RP-P-1920-1966.jpg](https://commons.wikimedia.org/wiki/File:Portret_van_Filips_IV_van_Frankrijk,_RP-P-1920-1966.jpg) | Rijksmuseum, grabado anónimo | c. 1610-1668 |
+| `luis-i.webp` | [King Louis X of France.jpg](https://commons.wikimedia.org/wiki/File:King_Louis_X_of_France.jpg) | Iluminación medieval anónima | c. 1379 |
+| `felipe-ii-navarra.webp` | [PhilippeVFrance.jpg](https://commons.wikimedia.org/wiki/File:PhilippeVFrance.jpg) | Henri Léonard Bordier y Édouard Charton | 1864 |
+| `carlos-i-navarra.webp` | [Charles4 mini.jpg](https://commons.wikimedia.org/wiki/File:Charles4_mini.jpg) | Jean de Liège (atrib.), miniatura | s. XIV |
+| `juana-ii.webp` | [Joan II of Navarre.png](https://commons.wikimedia.org/wiki/File:Joan_II_of_Navarre.png) | Bernardus Guidonis, miniatura | s. XIV |
+| `felipe-iii-navarra.webp` | [Philip III of Navarre.jpg](https://commons.wikimedia.org/wiki/File:Philip_III_of_Navarre.jpg) | Anónimo | s. XIV-XV |
+| `carlos-ii-navarra.webp` | [Charles II of Navarre.png](https://commons.wikimedia.org/wiki/File:Charles_II_of_Navarre.png) | Anónimo | c. 1375-1385 |
+| `carlos-iii-navarra.webp` | [Karel3 hl.jpg](https://commons.wikimedia.org/wiki/File:Karel3_hl.jpg) | Anónimo | s. XV |
+| `blanca-i.webp` | [BlancaI navarra.jpg](https://commons.wikimedia.org/wiki/File:BlancaI_navarra.jpg) | David Teniers II y Jan van Kessel I | 1664 |
+| `carlos-iv-viana.webp` | [El príncipe don Carlos de Viana, Museo del Prado.jpg](https://commons.wikimedia.org/wiki/File:El_pr%C3%ADncipe_don_Carlos_de_Viana,_Museo_del_Prado.jpg) | José Moreno Carbonero, Museo del Prado | 1881 |
+| `francisco-febo.webp` | [Francois Febus.jpg](https://commons.wikimedia.org/wiki/File:Francois_Febus.jpg) | Anónimo | s. XVI |
+| `catalina.webp` | [Catherine de Foix.jpg](https://commons.wikimedia.org/wiki/File:Catherine_de_Foix.jpg) | Paul Lacroix | s. XIX |
+
 ## Retratos de León-Castilla — Austrias y Borbones (siglos XVI-XVIII)
 
 Pendiente localizar retratos para Carlos I (Tiziano, Museo del Prado), Felipe II (Sofonisba Anguissola / Sánchez Coello), Felipe III (Velázquez), Felipe IV (Velázquez), Carlos II (Claudio Coello) y Felipe V. Todos tienen retratos documentados en Commons. Las imágenes se añadirán en una sesión posterior.

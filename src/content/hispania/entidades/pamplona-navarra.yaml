@@ -4,6 +4,19 @@ tipo: reino
 inicio: 824
 fin: 1841
 colorVar: "--c-norte"
+sub_entidades:
+  - slug: champana
+    nombre: "Casa de Champaña"
+    inicio: 1234
+    fin: 1274
+  - slug: capeto
+    nombre: "Casa Capeto (y Évreux)"
+    inicio: 1274
+    fin: 1425
+  - slug: trastamara-foix
+    nombre: "Casas Trastámara y Foix-Albret"
+    inicio: 1425
+    fin: 1517
 desc: >
   Reino pirenaico fundado hacia 824 por Íñigo Arista en torno a Pamplona,
   emergiendo del intersticio entre el imperio carolingio al norte, el
