@@ -10,15 +10,21 @@ Estado a 2026-04-26. Actualizar cada vez que se complete un bloque.
 | Al-Ándalus | ~50 / ~50 | revisar | parcheo de errores si los hay |
 | Taifas-menores | 0 / ~30 | ~30 | a decidir si se pueblan o se dejan como agregado |
 | Asturias | 12 / 12 | ✓ completa | — |
-| **León-Castilla 910-1230** | **0 / 23** | **23** | **bloque actual** |
-| León-Castilla 1230-1474 (Trastámara) | 0 / ~12 | ~12 | tras 1230 |
-| León-Castilla 1474-1715 (Austrias y primeros Borbones) | 0 / ~6 | ~6 | con `tambien_reino_en` |
-| Pamplona-Navarra | 0 / ~35 | ~35 | desde Íñigo Arista |
-| Aragón | 0 / ~20 | ~20 | desde Ramiro I |
-| Cataluña / Barcelona | 0 / ~12 | ~12 | desde Wifredo el Velloso |
-| Reino de Portugal | 0 / ~35 | ~35 | desde Afonso I Henriques |
+| León-Castilla 910-1230 | 23 / 23 | ✓ completa | — |
+| León-Castilla 1230-1474 (Trastámara) | ~12 / ~12 | ✓ completa | — |
+| León-Castilla 1474-1715 (Austrias y primeros Borbones) | 6 / 6 | ✓ completa | — |
+| Pamplona-Navarra 824-1234 (Arista + Jiménez) | 13 / 13 | ✓ completa | — |
+| **Pamplona-Navarra post-1234** | **0 / ~22** | **~22** | **Champaña → Capeto → Trastámara → Habsburgo** |
+| Aragón medieval + Trastámara | 20 / 20 | ✓ completa | — |
+| **Aragón Habsburgo/Borbón** | **0 / ~6** | **~6** | **Carlos I → Felipe V (Decretos Nueva Planta 1707)** |
+| Cataluña / Barcelona | 10 / ~10 | ✓ completa | — |
+| Reino de Portugal Borgoña + Avís | 17 / 17 | ✓ completa | — |
+| **Reino de Portugal Bragança** | **0 / ~14** | **~14** | **João IV → Manuel II (1640-1910)** |
+| **Visigodos restantes** | **1 / ~31** | **~30** | revisar `reges-hispaniae/assets/data.js` |
 
-**Total estimado pendiente al cerrar este bloque (910-1230):** ~125 soberanos.
+**Total estimado pendiente:** ~72 soberanos en 4 bloques activos.
+
+**Estado del build:** 226 páginas, 0 errores Zod (2026-04-27).
 
 ## León-Castilla 910-1230 (bloque actual, en migración)
 
