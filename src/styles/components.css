@@ -112,11 +112,7 @@
   margin-bottom: var(--sp-4);
   max-width: 20ch;
 }
-.hero-title i {
-  font-family: var(--font-display);
-  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
-  font-weight: 500;
-  font-style: italic;
+.hero-title .display-italic {
   color: var(--accent);
 }
 .hero-sub {
