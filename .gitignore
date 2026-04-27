@@ -60,3 +60,8 @@ skills-lock.json
 public/portraits/*
 !public/portraits/ATTRIBUTIONS.md
 
+# --- Notas de traspaso por sesión ----------------------------------------
+# Los HANDOVER-*.md son notas de transferencia de sesiones Sonnet pasadas.
+# Su contenido queda reflejado en git log + docs/MIGRATION-TODO.md.
+HANDOVER-*.md
+
