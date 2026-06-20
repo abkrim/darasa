@@ -90,3 +90,9 @@ Bragança (1640-1910), 14 reyes a migrar:
 4. ~~**Taifas-menores**~~ — **✓ DECISIÓN CERRADA**. Mantenidas como agregado documental. La `desc` del YAML incluye nota editorial explicando la decisión (documentación fragmentaria, iconografía ausente) y llamada a colaboradores. Sin fichas de emires.
 
 Cada sesión: ~10-15 reyes en formato Sonnet siguiendo `MIGRATION-GUIDE.md`. Verificación final con `npm run build` y commit limpio.
+
+## Enriquecimiento de contenido (fuentes nuevas, no migración)
+
+Los bloques marcados "completos" arriba pueden enriquecerse o corregirse con fuentes nuevas. Esto NO es migración pendiente; es trabajo de contenido aparte, con su propia sesión.
+
+- **Reino Nazarí (sub_entidad nazarí de `al-andalus`):** pendiente revisar/enriquecer con la tesis doctoral de Juan José Sánchez Carrasco, *La Vega de Granada en el tránsito del Reino Nazarí al Reino de Granada: cambios políticos, económicos y sociales* (Universidad de Granada, 2021; dir. Carmen Trillo San José), disponible en abierto: <https://digibug.ugr.es/handle/10481/71756>. El autor detectó huecos significativos; concretarlos en sesión dedicada (tesis densa, 975 pp). Citar siempre por el handle DIGIBUG, no por copias locales del PDF.
