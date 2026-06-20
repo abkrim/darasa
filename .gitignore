@@ -50,6 +50,9 @@ desktop.ini
 .aider*
 .copilot/
 .gpt*
+.codex/
+.serena/
+.playwright-mcp/
 skills-lock.json
 
 # --- Imágenes -------------------------------------------------------------
