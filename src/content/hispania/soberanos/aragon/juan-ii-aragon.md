@@ -9,7 +9,7 @@ inicio: 1458
 fin: 1479
 capital: "Zaragoza"
 img: "/portraits/juan-ii-aragon.webp"
-imgCredit: "Retrato de Juan II de Aragón, anónimo, s. XV. Dominio público vía Wikimedia Commons."
+imgCredit: "Grabado de la serie de reyes de España, 1797. Dominio público vía Wikimedia Commons."
 hechos:
   - { k: "Padre", v: "Fernando I de Aragón" }
   - { k: "Navarra", v: "Rey de Navarra jure uxoris desde 1425 por matrimonio con Blanca I — disputó el reino a su hijo Carlos de Viana" }

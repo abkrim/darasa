@@ -108,10 +108,10 @@ Salvo excepciones indicadas, los retratos proceden de la serie cronológica del 
 | `pedro-iv.webp` | [Pere IV el Cerimoniós.jpg](https://commons.wikimedia.org/wiki/File:Pere_IV_el_Cerimon%C3%B3s.jpg) | Miniatura de las Crónicas de Pedro IV | s. XIV |
 | `juan-i-aragon.webp` | [Joan I d'Aragó.jpg](https://commons.wikimedia.org/wiki/File:Joan_I_d%27Arag%C3%B3.jpg) | Retrato imaginario, anónimo | s. XV |
 | `martin-i.webp` | [Martí I l'Humà.jpg](https://commons.wikimedia.org/wiki/File:Mart%C3%AD_I_l%27Hum%C3%A0.jpg) | Retrato, anónimo | s. XV |
-| `fernando-i-aragon.webp` | [Fernando I de Aragón.jpg](https://commons.wikimedia.org/wiki/File:Fernando_I_de_Arag%C3%B3n.jpg) | Retrato imaginario, anónimo | s. XV |
-| `alfonso-v-aragon.webp` | [Alfonso V de Aragón (Pisanello).jpg](https://commons.wikimedia.org/wiki/File:Alfonso_V_de_Arag%C3%B3n_%28Pisanello%29.jpg) | Pisanello (medalla, detalle) | c. 1449 |
-| `juan-ii-aragon.webp` | [Juan II de Aragón.jpg](https://commons.wikimedia.org/wiki/File:Juan_II_de_Arag%C3%B3n.jpg) | Retrato, anónimo | s. XV |
-| `fernando-ii-aragon.webp` | [Fernando el Católico (Sittow).jpg](https://commons.wikimedia.org/wiki/File:Fernando_el_Cat%C3%B3lico_%28Sittow%29.jpg) | Michel Sittow (atribuido) | c. 1500 |
+| `fernando-i-aragon.webp` | [Retrato-308-Rey de Aragón-Fernando I.jpg](https://commons.wikimedia.org/wiki/File:Retrato-308-Rey_de_Arag%C3%B3n-Fernando_I.jpg) | Manuel Rodríguez (grabado, serie de reyes de España) | 1797 |
+| `alfonso-v-aragon.webp` | [Pisanello, Alfonso V of Aragon (obverse), NGA 44353.jpg](https://commons.wikimedia.org/wiki/File:Pisanello,_Alfonso_V_of_Aragon,_1394-1458,_King_of_Naples_and_Sicily_1443_%28obverse%29,_c._1449,_NGA_44353.jpg) | Pisanello (medalla, anverso) · National Gallery of Art, CC0 | c. 1449 |
+| `juan-ii-aragon.webp` | [Retrato-362-Rey de Aragón-Juan II.jpg](https://commons.wikimedia.org/wiki/File:Retrato-362-Rey_de_Arag%C3%B3n-Juan_II.jpg) | Grabado, serie de reyes de España | 1797 |
+| `fernando-ii-aragon.webp` | [Retrato-396-Rey de Aragón-Fernando II el Católico.jpg](https://commons.wikimedia.org/wiki/File:Retrato-396-Rey_de_Arag%C3%B3n-Fernando_II_el_Cat%C3%B3lico.jpg) | Manuel Rodríguez (grabado, serie de reyes de España) | 1797 |
 
 ## Numismática de Al-Ándalus
 

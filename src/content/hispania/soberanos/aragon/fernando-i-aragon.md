@@ -9,7 +9,7 @@ inicio: 1412
 fin: 1416
 capital: "Zaragoza"
 img: "/portraits/fernando-i-aragon.webp"
-imgCredit: "Retrato imaginario, anónimo. Dominio público vía Wikimedia Commons."
+imgCredit: "Grabado de Manuel Rodríguez, 1797 (serie de reyes de España). Dominio público vía Wikimedia Commons."
 hechos:
   - { k: "Origen", v: "Infante de Castilla, segundo hijo de Juan I de Castilla — casa Trastámara" }
   - { k: "Antequera", v: "Toma Antequera a los nazaríes · 1410, siendo regente de Castilla — le da el epíteto" }

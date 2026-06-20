@@ -4,6 +4,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://darasa.es',
+  site: 'https://iberia.darasa.es',
   integrations: [sitemap()],
 });

@@ -10,7 +10,7 @@ inicio: 1479
 fin: 1516
 capital: "Zaragoza"
 img: "/portraits/fernando-ii-aragon.webp"
-imgCredit: "Retrato de Fernando el Católico, Michel Sittow (atribuido), c. 1500. Dominio público vía Wikimedia Commons."
+imgCredit: "Grabado de Manuel Rodríguez, 1797 (serie de reyes de España). Dominio público vía Wikimedia Commons."
 hechos:
   - { k: "Padre", v: "Juan II de Aragón" }
   - { k: "Castilla", v: "Casa con Isabel I de Castilla · 1469 — gobierna Castilla como Fernando V jure uxoris" }
