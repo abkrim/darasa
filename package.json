@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "node --test"
+    "test": "node --test",
+    "validate:links": "node scripts/validate/links.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",
