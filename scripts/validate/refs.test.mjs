@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { classifyHttp, classifyCommons, classifyDate, fetchStatus } from './refs.mjs';
+import { classifyHttp, classifyCommons, classifyDate, fetchStatus, commonsBatch } from './refs.mjs';
 
 test('classifyHttp severity mapping', () => {
   assert.equal(classifyHttp(200), null);
@@ -38,4 +38,22 @@ test('fetchStatus returns status via injected fetch', async () => {
 test('fetchStatus returns null on thrown network error after retries', async () => {
   const fakeFetch = async () => { throw new Error('boom'); };
   assert.equal(await fetchStatus('https://x', { fetchImpl: fakeFetch, retries: 1, timeoutMs: 50 }), null);
+});
+
+test('commonsBatch: detects missing, extracts year, keys by normalized title', async () => {
+  const fakeFetch = async () => ({
+    json: async () => ({
+      query: {
+        normalized: [{ from: 'File:Foo_Bar.jpg', to: 'File:Foo Bar.jpg' }],
+        pages: {
+          '-1': { title: 'File:Foo Bar.jpg', missing: '' },
+          '123': { title: 'File:Real Image.jpg', imageinfo: [{ extmetadata: { DateTimeOriginal: { value: '1797' } } }] },
+        },
+      },
+    }),
+  });
+  const result = await commonsBatch(['File:Foo_Bar.jpg', 'File:Real_Image.jpg'], { fetchImpl: fakeFetch });
+  assert.equal(result.get('File:Foo Bar.jpg').missing, true);
+  assert.equal(result.get('File:Real Image.jpg').missing, false);
+  assert.equal(result.get('File:Real Image.jpg').year, '1797');
 });

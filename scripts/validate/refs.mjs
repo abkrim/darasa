@@ -95,6 +95,9 @@ async function main() {
     if (!refresh && isFresh(cache[key], now)) {
       info = cache[key];
     } else {
+      // If a queried title isn't found in the response map, normalization diverged
+      // (rare: casing/encoding beyond underscore↔space). Conservative default = treat
+      // as missing so it surfaces for manual review rather than passing silently.
       info = commons.get(normTitle(i.attribution.commonsFile)) ?? { missing: true, year: null };
       newCache[key] = { ...info, checkedAt: now };
     }
