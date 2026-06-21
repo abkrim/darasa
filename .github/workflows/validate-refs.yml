@@ -1,0 +1,106 @@
+name: validate-refs
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'   # Mondays 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate-refs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - run: npm ci
+
+      - name: Build (offline) — emits dist/sources.json
+        run: npm run build
+
+      - name: Restore refs cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: validate-refs-cache
+
+      - name: Run validate:refs (refresh, json)
+        id: refs
+        run: |
+          set +e
+          node scripts/validate/refs.mjs --refresh --json > refs-report.json
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+
+      - name: Open / update / close issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let report;
+            try {
+              report = JSON.parse(fs.readFileSync('refs-report.json', 'utf8'));
+            } catch (e) {
+              core.warning(`Could not parse refs-report.json: ${e.message}`);
+              return;
+            }
+            const errors = (report.findings ?? []).filter(f => f.severity === 'error');
+            const title = 'Referencias caídas';
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'validate-refs',
+            });
+            const existing = issues.find(i => i.title === title);
+            const today = new Date().toISOString().slice(0, 10);
+
+            if (errors.length === 0) {
+              if (existing) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner, repo: context.repo.repo,
+                  issue_number: existing.number, body: `Resuelto en ${today}. Cerrando.`,
+                });
+                await github.rest.issues.update({
+                  owner: context.repo.owner, repo: context.repo.repo,
+                  issue_number: existing.number, state: 'closed',
+                });
+              }
+              return;
+            }
+
+            // Group by ficha.
+            const byFicha = {};
+            for (const f of errors) {
+              const k = f.slug || '(sin ficha)';
+              (byFicha[k] ??= []).push(f);
+            }
+            let body = `Comprobación semanal de referencias — ${today}\n\n`;
+            for (const [ficha, items] of Object.entries(byFicha).sort()) {
+              body += `### ${ficha}\n`;
+              for (const it of items) body += `- \`${it.type}\`: ${it.detail}\n`;
+              body += '\n';
+            }
+            body += `\nReproducir en local:\n\n\`\`\`\nnpm run build && npm run validate:refs\n\`\`\`\n`;
+
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: existing.number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['validate-refs'],
+              });
+            }
+
+      - name: Fail the job if there were real errors
+        if: steps.refs.outputs.exit_code != '0'
+        run: |
+          echo "validate:refs reported errors (exit ${{ steps.refs.outputs.exit_code }})"
+          exit 1
