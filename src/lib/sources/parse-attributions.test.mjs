@@ -29,3 +29,21 @@ test('keeps underscores in File: title', () => {
 test('ignores non-row lines', () => {
   assert.deepEqual(parseAttributions('# Title\n\nSome prose.\n'), []);
 });
+
+test('handles non-jpg extension and parentheses in title', () => {
+  const md = '| `algo.webp` | [Algo (detalle).png](https://commons.wikimedia.org/wiki/File:Algo_(detalle).png) | Autor X | 1900 |';
+  const rows = parseAttributions(md);
+  assert.equal(rows.length, 1);
+  assert.equal(rows[0].commonsFile, 'File:Algo_(detalle).png');
+  assert.equal(rows[0].commonsUrl, 'https://commons.wikimedia.org/wiki/File:Algo_(detalle).png');
+});
+
+test('row with no Commons link → commonsUrl/commonsFile null', () => {
+  const md = '| `no-link.webp` | Obra sin identificar | Anónimo | s. XIV |';
+  const rows = parseAttributions(md);
+  assert.equal(rows.length, 1);
+  assert.equal(rows[0].commonsUrl, null);
+  assert.equal(rows[0].commonsFile, null);
+  assert.equal(rows[0].autor, 'Anónimo');
+  assert.equal(rows[0].anio, 's. XIV');
+});

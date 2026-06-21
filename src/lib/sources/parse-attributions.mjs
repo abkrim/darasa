@@ -8,7 +8,9 @@
  */
 
 const ROW = /^\|\s*`([^`]+\.webp)`\s*\|([^|]*)\|([^|]*)\|([^|]*)\|\s*$/;
-const LINK = /\((https?:\/\/commons\.wikimedia\.org\/wiki\/(File:.*?\.(jpg|jpeg|png|gif|svg)))\)/i;
+// Anchor on the markdown link's closing ")" at end of the cell, not on a file
+// extension — Commons URLs have no spaces and may end in any extension.
+const LINK = /\((https?:\/\/commons\.wikimedia\.org\/wiki\/(File:\S+))\)\s*$/;
 
 /**
  * @param {string} markdown
