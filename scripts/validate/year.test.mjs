@@ -8,6 +8,9 @@ test('extractYear: clean single year', () => {
 test('extractYear: circa is ambiguous', () => {
   assert.equal(extractYear('Medalla de Pisanello, c. 1449. Dominio público.'), null);
 });
+test('extractYear: "ca." abbreviation is ambiguous', () => {
+  assert.equal(extractYear('Retrato anónimo, ca. 1500.'), null);
+});
 test('extractYear: century is ambiguous', () => {
   assert.equal(extractYear('Retrato imaginario, anónimo, s. XVII.'), null);
 });

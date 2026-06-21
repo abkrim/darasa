@@ -1,4 +1,6 @@
 const AMBIGUOUS = /\b(c\.|ca\.|circa|s\.|siglo)/i;
+// Used ONLY with String.prototype.match() (which resets lastIndex). Do not call
+// .test()/.exec() on this shared `g`-flagged constant — that would carry state.
 const YEAR = /\b(1[0-9]{3}|20[0-2][0-9])\b/g;
 const THRESHOLD = 50;
 
