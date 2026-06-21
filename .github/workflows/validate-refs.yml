@@ -34,7 +34,7 @@ jobs:
         id: refs
         run: |
           set +e
-          node scripts/validate/refs.mjs --refresh --json > refs-report.json
+          npm run validate:refs -- --refresh --json > refs-report.json
           echo "exit_code=$?" >> "$GITHUB_OUTPUT"
           set -e
 
