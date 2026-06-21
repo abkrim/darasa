@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { loadSourcesIndex } from '../lib/sources/load.mjs';
+
+const { bibliografia, web, imagenes } = await loadSourcesIndex();
+const conAttr = imagenes.filter((i) => i.attribution);
+---
+
+<Layout title="Fuentes — darasa" description="Índice consolidado de fuentes bibliográficas, enlaces web e imágenes de darasa.">
+  <main class="fuentes">
+    <h1>Fuentes</h1>
+    <p>Índice generado automáticamente desde el contenido. No editar a mano.</p>
+
+    <section>
+      <h2>Bibliografía <small>({bibliografia.length})</small></h2>
+      <ul>
+        {bibliografia.map((b) => (
+          <li>
+            <span>{b.texto}</span>
+            <small> — citada en: {b.citadaEn.join(', ')}</small>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section>
+      <h2>Enlaces web <small>({web.length})</small></h2>
+      <ul>
+        {web.map((w) => (
+          <li>
+            <a href={w.url} rel="noopener noreferrer" target="_blank">{w.url}</a>
+            <small> [{w.dominio}] — citada en: {w.citadaEn.join(', ')}</small>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section>
+      <h2>Imágenes y atribuciones <small>({conAttr.length})</small></h2>
+      <ul>
+        {conAttr.map((i) => (
+          <li>
+            <a href={`/hispania/soberanos/${i.slug}`}>{i.slug}</a>
+            {' — '}
+            {i.attribution.commonsUrl
+              ? <a href={i.attribution.commonsUrl} rel="noopener noreferrer" target="_blank">{i.attribution.commonsFile}</a>
+              : <span>{i.attribution.commonsFile}</span>}
+            {i.attribution.anio ? <small> ({i.attribution.anio})</small> : null}
+          </li>
+        ))}
+      </ul>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .fuentes { max-width: 70ch; margin: 0 auto; padding: 2rem 1rem; }
+  .fuentes section { margin-block: 2rem; }
+  .fuentes li { margin-block: 0.4rem; }
+  .fuentes small { opacity: 0.7; }
+</style>
