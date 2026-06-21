@@ -11,7 +11,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "test": "node --test",
-    "validate:links": "node scripts/validate/links.mjs"
+    "validate:links": "node scripts/validate/links.mjs",
+    "validate:refs": "node scripts/validate/refs.mjs",
+    "validate:deploy": "npm run build && npm run validate:links && npm run validate:refs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",

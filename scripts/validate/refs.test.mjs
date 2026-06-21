@@ -1,0 +1,41 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { classifyHttp, classifyCommons, classifyDate, fetchStatus } from './refs.mjs';
+
+test('classifyHttp severity mapping', () => {
+  assert.equal(classifyHttp(200), null);
+  assert.equal(classifyHttp(301), null);
+  assert.deepEqual(classifyHttp(404), { severity: 'error', type: 'http_error' });
+  assert.deepEqual(classifyHttp(410), { severity: 'error', type: 'http_error' });
+  assert.deepEqual(classifyHttp(403), { severity: 'warning', type: 'http_warning' });
+  assert.deepEqual(classifyHttp(429), { severity: 'warning', type: 'http_warning' });
+  assert.deepEqual(classifyHttp(500), { severity: 'warning', type: 'http_warning' });
+  assert.deepEqual(classifyHttp(null), { severity: 'warning', type: 'timeout' });
+});
+
+test('classifyCommons flags missing', () => {
+  assert.equal(classifyCommons({ missing: false }), null);
+  assert.deepEqual(classifyCommons({ missing: true }), { severity: 'error', type: 'missing_file' });
+  assert.deepEqual(classifyCommons(null), { severity: 'error', type: 'missing_file' });
+});
+
+test('classifyDate: clear 1500 vs 1797 warns', () => {
+  const r = classifyDate('Pintura, 1500.', '1797');
+  assert.equal(r.severity, 'warning');
+  assert.equal(r.type, 'date_warning');
+});
+
+test('classifyDate: ambiguous credit → null', () => {
+  assert.equal(classifyDate('c. 1500', '1797'), null);
+  assert.equal(classifyDate('1850', null), null);
+});
+
+test('fetchStatus returns status via injected fetch', async () => {
+  const fakeFetch = async () => ({ status: 404 });
+  assert.equal(await fetchStatus('https://x', { fetchImpl: fakeFetch }), 404);
+});
+
+test('fetchStatus returns null on thrown network error after retries', async () => {
+  const fakeFetch = async () => { throw new Error('boom'); };
+  assert.equal(await fetchStatus('https://x', { fetchImpl: fakeFetch, retries: 1, timeoutMs: 50 }), null);
+});
