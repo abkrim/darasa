@@ -16,6 +16,19 @@ Atlas histórico educativo de la Península Ibérica. Audiencia primaria Ibrahim
 - **Build estático:** `npm run build` → `dist/`
 - **Preview build:** Herd sirve `dist/` como `http://darasa.test` (link hecho con `cd dist && herd link darasa`)
 
+### Validación pre-deploy
+
+Antes de subir `dist/` por rsync (`darasa@dar`), correr el gate completo:
+
+```bash
+npm run validate:deploy   # build (offline) + validate:links + validate:refs
+```
+
+- `validate:links` (offline) verifica integridad de enlaces internos: que cada `.webp` exista, que tenga fila en `ATTRIBUTIONS.md` con `File:` parseable, y el formato de las URLs (incl. `http→https`).
+- `validate:refs` (online) resuelve cada `File:` en Commons y cada URL de `fuentes`. Falla solo con evidencia accionable (Commons `missing`, HTTP 404/410). El resto son warnings.
+
+El check semanal en CI (`.github/workflows/validate-refs.yml`) corre `validate:refs --refresh` y abre/cierra el issue estable «Referencias caídas».
+
 ## Sistema de diseño
 
 **Antes de cualquier cambio visual o de UI, leer `DESIGN.md` en la raíz del proyecto.**
